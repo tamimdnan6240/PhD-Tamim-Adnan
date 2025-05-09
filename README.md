@@ -5,9 +5,8 @@ Data Analytical Methods: Natural Language Processing, Topic Modeling and Geospat
 
 ### ASCE-ICTD 2025 Conference: 
 Paper: Equitable Infrastructure Management: A Systematic Literature Review
+
 Link: (under process) 
-Abstract
-Transportation infrastructure plays a vital role in driving prosperity but can also disproportionately burden communities, highlighting the importance of equity in infrastructure management. Despite over a decade of research, a comprehensive review of the state of the art and a clear research agenda across various infrastructure sectors remains lacking. Key questions include identifying primary research areas, evaluating geographic research coverage on equity across the US, and analyzing publishing trends, including top journals and publishers. This study conducts a thorough literature review on equity in infrastructure management, beginning with representative keywords to screen 1,405 articles from the Scopus database. Using Natural Language Processing techniques, relevant papers were filtered, resulting in 279 articles selected for in-depth analysis. Text mining approaches, including thematic analysis and topic modeling, provided insights into current research trends, gaps, and opportunities for advancing equity-related studies in infrastructure management. Findings emphasize the need for expanded geographic diversity, interdisciplinary collaboration, and broader research thrusts to advance equitable infrastructure systems. 
 
 Datasets: 
 We initially reviewed 1,405 papers from Scopus based on relevant keywords. Following an extensive screening process, 295 papers were shortlisted for consideration in this conference. Ultimately, 272 papers were selected to analyze the socioeconomic dimensions of infrastructure management, with a particular focus on equitable infrastructure development and the broader themes of equity and justice for all.
