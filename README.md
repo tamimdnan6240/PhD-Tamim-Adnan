@@ -32,3 +32,16 @@ Link: (under process)
 
 Datasets: 
 We initially reviewed 1,405 papers from Scopus based on relevant keywords. Following an extensive screening process, 295 papers were shortlisted for consideration in this conference. Ultimately, 272 papers were selected to analyze the socioeconomic dimensions of infrastructure management, with a particular focus on equitable infrastructure development and the broader themes of equity and justice for all.
+
+## Chapter 3: Justice Considerations Roughness Predictions (under no maintence)  
+
+Data Analytical Methods: Regression Analysis and Explainable AI (XAI) 
+
+Paper: Data-Augmented Explainable AI for Pavement Roughness Prediction 
+
+Link: (under process) 
+
+Dataset: HPMS 2017, 2018, 2019 and 2020. 
+
+
+
