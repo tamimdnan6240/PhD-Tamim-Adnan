@@ -2,9 +2,7 @@
 
 ## Chapter 1
 
-### Conference 1, Journal-1
-
-#### Two-step-Cluster-Analysis
+### Conference 1, Journal-1, Method: Two-step-Cluster-Analysis
 
 ##### Winter Simulation 2024 Conference
 Paper: Uncovering Socioeconomic Features in Pavement Conditions Through Data Mining: A Two-Step Clustering Model 
