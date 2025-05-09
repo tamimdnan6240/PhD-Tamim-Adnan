@@ -11,7 +11,8 @@ Link: (under process)
 Datasets: 
 We initially reviewed 1,405 papers from Scopus based on relevant keywords. Following an extensive screening process, 295 papers were shortlisted for consideration in this conference. Ultimately, 272 papers were selected to analyze the socioeconomic dimensions of infrastructure management, with a particular focus on equitable infrastructure development and the broader themes of equity and justice for all.
 
-## Data Analytical Methods: Two-step-Clustering for Pattern Analysis, Correlation Analysis for Feature Selections, Linear Interpolations for Handeling Missing Values 
+## Pattern Analysis 
+Data Analytical Methods: Two-step-Clustering for Pattern Analysis, Correlation Analysis for Feature Selections, Linear Interpolations for Handeling Missing Values 
 
 ### Winter Simulation 2024 Conference
 Paper: Uncovering Socioeconomic Features in Pavement Conditions Through Data Mining: A Two-Step Clustering Model 
