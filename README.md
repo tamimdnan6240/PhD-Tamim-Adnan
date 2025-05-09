@@ -1,6 +1,6 @@
-# Chapter 1
+# Chapter 1 
 
-## Conference 1, Journal-1, Method: Two-step-Cluster-Analysis
+## Method 1: Two-step-Clustering for Pattern Analysis, 
 
 ### Winter Simulation 2024 Conference
 Paper: Uncovering Socioeconomic Features in Pavement Conditions Through Data Mining: A Two-Step Clustering Model 
@@ -15,3 +15,6 @@ Link: (under publication process)
 
 Dataset: 
 We again utilized HPMS data from 2017, 2018, and 2019, incorporating variables such as the International Roughness Index (IRI), base, rigid, and flexible pavement thickness, surface type, and functional system classifications. For this phase, we also included socioeconomic variables from the ACS 5-Year Estimates to examine pavement condition patterns in various socioeconomic contexts. Missing values were addressed using linear interpolation, and Pearson correlation analysis was performed to assess relationships among the variables. 
+
+## Systematic Review: 
+Methods: Natural Language Processing, Topic Modeling and Geospatial Analysis for Systematic Review 
