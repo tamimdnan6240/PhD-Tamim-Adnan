@@ -1,9 +1,11 @@
-# Chapter 1 
+# Title: Predictive Pavement Analytics: Enhancing Decision-making for Network Maintenance  
+
+# Chapter 1: Socioeconomic Considerations in Decision-making 
 
 ## Systematic Review
 Data Analytical Methods: Natural Language Processing, Topic Modeling and Geospatial Analysis for Systematic Review 
 
-### ASCE-ICTD 2025 Conference
+#### ASCE-ICTD 2025 Conference
 Paper: Equitable Infrastructure Management: A Systematic Literature Review
 
 Link: (under process) 
@@ -14,13 +16,13 @@ We initially reviewed 1,405 papers from Scopus based on relevant keywords. Follo
 ## Pattern Analysis 
 Data Analytical Methods: Two-step-Clustering for Pattern Analysis, Correlation Analysis for Feature Selections, Linear Interpolations for Handeling Missing Values 
 
-### Winter Simulation 2024 Conference
+#### Winter Simulation 2024 Conference
 Paper: Uncovering Socioeconomic Features in Pavement Conditions Through Data Mining: A Two-Step Clustering Model 
 Link: https://ieeexplore.ieee.org/abstract/document/10838835 
 Dataset: 
 We used HPMS data from the years 2017, 2018, and 2019 to analyze pavement roughness, and climate data and incorporated socioeconomic data from the American Community Survey (ACS) 1-Year Estimates to explore patterns in pavement conditions across different socioeconomic contexts. Due to missing ACS data for 2020 at the time of publication, we imputed values by taking the mean of the 2019 and 2021 datasets. Each year’s HPMS and ACS data were merged individually, and the combined yearly datasets were then concatenated to form a unified dataset for conducting the two-step cluster analysis. 
 
-### Journal of Management in Engineering (ASCE) 
+#### Journal of Management in Engineering (ASCE) 
 Paper: Paving Equity: Unveiling Socioeconomic Patterns in Pavement Conditions Using Data Mining (Accepeted) 
 
 Link: (under publication process) 
