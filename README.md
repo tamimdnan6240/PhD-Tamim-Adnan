@@ -3,7 +3,7 @@
 ## Systematic Review: 
 Data Analytical Methods: Natural Language Processing, Topic Modeling and Geospatial Analysis for Systematic Review 
 
-### ASCE-ICTD 2025 Conference: 
+### ASCE-ICTD 2025 Conference
 Paper: Equitable Infrastructure Management: A Systematic Literature Review
 
 Link: (under process) 
