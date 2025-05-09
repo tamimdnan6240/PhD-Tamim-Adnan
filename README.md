@@ -1,6 +1,6 @@
 # Chapter 1 
 
-## Systematic Review: 
+## Systematic Review
 Data Analytical Methods: Natural Language Processing, Topic Modeling and Geospatial Analysis for Systematic Review 
 
 ### ASCE-ICTD 2025 Conference
