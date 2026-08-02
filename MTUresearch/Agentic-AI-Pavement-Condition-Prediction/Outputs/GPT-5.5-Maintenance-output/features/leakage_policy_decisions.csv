@@ -1,6 +1,0 @@
-column_or_group,decision,severity,rationale,future_requirement
-IRI_mean_y,exclude_from_predictors,target,Approved supervised learning target.,Must never appear in X/features.
-any_non_target_*_y_columns,exclude_from_predictors,high,_y suffix may indicate outcome-period information.,Only reconsider with documented temporal availability before prediction date.
-Treatment_type,exclude_from_initial_modeling_predictors,high,May encode maintenance decision or post-baseline intervention in response to condition.,Can only be reconsidered if proven historical/pre-baseline.
-Future_AADT_mean_x,exclude_from_initial_modeling_predictors,medium_high,May represent future observed traffic unavailable at baseline.,Can only be reconsidered if documented as baseline-available forecast.
-IRI_mean_x,include_conditionally,conditional,Likely baseline roughness and engineering-relevant for future IRI.,"Temporal ordering must be preserved; if same-period as target, exclude."

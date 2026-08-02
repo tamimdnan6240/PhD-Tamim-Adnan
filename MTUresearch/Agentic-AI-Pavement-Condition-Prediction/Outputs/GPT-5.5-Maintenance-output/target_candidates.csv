@@ -1,5 +1,0 @@
-column,family,family_confidence,reasons,leakage_guard
-IRI_mean_x,iri,high,"[""Matched IRI/Roughness via token 'iri' or substring 'roughness'.""]",Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.
-IRI_mean_y,iri,high,"[""Matched IRI/Roughness via token 'iri' or substring 'roughness'.""]",Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.
-Cracking_Percent_mean_x,cracking_percent,high,"[""Matched Cracking via substring 'cracking' or token 'crack'."", ""Name suggests percent measure (%, percent, or pct).""]",Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.
-Rutting_mean_x,rutting,medium,"[""Matched Rutting via substring 'rutting' or token 'rut'.""]",Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.
