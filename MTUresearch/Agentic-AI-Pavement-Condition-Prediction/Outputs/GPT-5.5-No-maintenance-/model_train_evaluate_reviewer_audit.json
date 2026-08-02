@@ -1,0 +1,907 @@
+{
+  "hard_gate_passed": true,
+  "AUDIT_RUN_ID": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+  "DATASET_ID": "c1ba44638d60",
+  "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "state": "MODEL_TRAIN_EVALUATE",
+  "target": "IRI_mean_y",
+  "best_model": "HistGradientBoostingRegressor",
+  "best_test_metrics": {
+    "RMSE": 19.74844532106776,
+    "MAE": 10.7493467479813,
+    "R2": 0.894348087748373
+  },
+  "artifact_paths": {
+    "model_metrics_summary_csv": "/content/pavement_agentic_workspace/metrics/model_metrics_summary.csv",
+    "model_metrics_summary_json": "/content/pavement_agentic_workspace/metrics/model_metrics_summary.json",
+    "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+    "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+    "best_model_selection_json": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+    "model_library_availability_json": "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+    "model_train_evaluate_reviewer_audit_json": "/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json"
+  },
+  "artifact_checks": {
+    "metrics_dir_exists": true,
+    "model_metrics_summary.csv": true,
+    "model_metrics_summary.json": true,
+    "model_comparison_metrics_long.csv": true,
+    "model_comparison_metrics_long.json": true,
+    "best_model_selection.json": true,
+    "model_library_availability.json": true,
+    "model_train_evaluate_reviewer_audit.json": true,
+    "features_dir_exists": true,
+    "models_dir_exists": true,
+    "plots_dir_exists": true,
+    "predictions_dir_exists": true
+  },
+  "metrics_schema_checks": {
+    "long_csv_exists": true,
+    "long_json_exists": true,
+    "long_csv_non_empty": true,
+    "long_json_non_empty": true,
+    "required_fields_present_csv": {
+      "model_name": true,
+      "metric_name": true,
+      "value": true,
+      "timestamp": true
+    },
+    "all_required_fields_present_csv": true,
+    "required_fields_present_json_first_record": {
+      "model_name": true,
+      "metric_name": true,
+      "value": true,
+      "timestamp": true
+    },
+    "all_required_fields_present_json": true,
+    "all_values_numeric_or_coercible": "True",
+    "timestamp_present_all_rows": "True",
+    "includes_all_evaluated_models": true,
+    "evaluated_models": [
+      "ElasticNet_baseline",
+      "ExtraTreesRegressor",
+      "GradientBoostingRegressor",
+      "HistGradientBoostingRegressor",
+      "RandomForestRegressor"
+    ],
+    "models_in_long_metrics": [
+      "ElasticNet_baseline",
+      "ExtraTreesRegressor",
+      "GradientBoostingRegressor",
+      "HistGradientBoostingRegressor",
+      "RandomForestRegressor"
+    ],
+    "includes_required_metrics_by_split_for_each_model": true,
+    "required_metrics": [
+      "MAE",
+      "RMSE",
+      "R2",
+      "MedianAbsoluteError",
+      "Bias_MeanError_pred_minus_actual"
+    ],
+    "required_splits": [
+      "validation",
+      "test"
+    ],
+    "long_row_count": 50,
+    "missing_required_model_metric_split_rows": []
+  },
+  "modeling_checks": {
+    "models_evaluated_count": 5,
+    "at_least_three_models_evaluated": true,
+    "best_model": "HistGradientBoostingRegressor",
+    "best_model_selection_references_long_csv": true,
+    "best_model_selection_references_long_json": true,
+    "selection_rule_lowest_test_RMSE_with_test_MAE_tiebreaker": true,
+    "best_test_RMSE_is_finite": true,
+    "best_test_MAE_is_finite": true,
+    "best_test_R2_is_finite_or_null": true,
+    "model_library_availability_documented": true,
+    "fallback_documented": true
+  },
+  "leakage_checks": {
+    "target_excluded_from_features": true,
+    "no_y_columns_in_features": true,
+    "Future_AADT_mean_x_excluded_primary_strict_model": true,
+    "excluded_features_include_target": true,
+    "primary_leakage_rule_enforced_from_existing_feature_artifacts": true
+  },
+  "model_library_availability": {
+    "state": "MODEL_TRAIN_EVALUATE",
+    "dataset_id": "c1ba44638d60",
+    "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+    "target": "IRI_mean_y",
+    "created_at_utc": "2026-07-31T06:05:10.084815+00:00",
+    "libraries": {
+      "xgboost": {
+        "available": false,
+        "candidate_estimator": "XGBRegressor"
+      },
+      "lightgbm": {
+        "available": false,
+        "candidate_estimator": "LGBMRegressor"
+      },
+      "catboost": {
+        "available": false,
+        "candidate_estimator": "CatBoostRegressor"
+      }
+    },
+    "evaluated_models_from_existing_metrics": [
+      "ElasticNet_baseline",
+      "ExtraTreesRegressor",
+      "GradientBoostingRegressor",
+      "HistGradientBoostingRegressor",
+      "RandomForestRegressor"
+    ],
+    "sklearn_gradient_boosting_fallback_evaluated": true,
+    "note": "This metrics-audit/fix step did not retrain models. It documents library availability and confirms sklearn GradientBoostingRegressor was evaluated in the existing modeling run as the approved fallback path when external gradient-boosting libraries are not used.",
+    "any_external_gradient_boosting_library_available": false,
+    "fallback_documented": true
+  },
+  "mm_record_checks": {
+    "model_metrics_record_exists": true,
+    "model_metrics_per_model_records_exist": true,
+    "model_metrics_per_model_records_at_least_evaluated_model_count": true,
+    "results_record_exists": true,
+    "pipeline_state_completed_record_exists": true,
+    "model_metrics_records_have_minimum_meta": true,
+    "model_metrics_per_model_records_have_minimum_meta": true,
+    "results_records_have_minimum_meta": true,
+    "pipeline_state_records_have_minimum_meta": true,
+    "all_final_retrieved_records_have_minimum_meta": true
+  },
+  "mm_retrieval_after_logging": {
+    "model_metrics": [
+      {
+        "text": "0.6749999523162842 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_library_availability_path": "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+          "metrics_long_schema": [
+            "model_name",
+            "metric_name",
+            "value",
+            "timestamp"
+          ]
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '0a48648c6cc56e76eb4b506b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_library_availability_path': '/content/pavement_agentic_workspace/metrics/model_library_availability.json', 'metrics_long_schema': ['model_name', 'metric_name', 'value', 'timestamp']}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "GradientBoostingRegressor",
+          "model_name": "GradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.968254255765796,
+          "test_RMSE": 20.42179535138922,
+          "test_R2": 0.887020570388342,
+          "test_MedianAbsoluteError": 6.655984645866255,
+          "test_Bias_MeanError_pred_minus_actual": -0.1498008425483942
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': 'f7b5961c421944a8a6305ae0', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'GradientBoostingRegressor', 'model_name': 'GradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.968254255765796, 'test_RMSE': 20.42179535138922, 'test_R2': 0.887020570388342, 'test_MedianAbsoluteError': 6.655984645866255, 'test_Bias_MeanError_pred_minus_actual': -0.1498008425483942}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "RandomForestRegressor",
+          "model_name": "RandomForestRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.04845054637885,
+          "test_RMSE": 20.62193451772352,
+          "test_R2": 0.8847952607686442,
+          "test_MedianAbsoluteError": 6.390403975856131,
+          "test_Bias_MeanError_pred_minus_actual": 0.2254504933602209
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': 'b99bba7fc357b980ccd1000b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'RandomForestRegressor', 'model_name': 'RandomForestRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.04845054637885, 'test_RMSE': 20.62193451772352, 'test_R2': 0.8847952607686442, 'test_MedianAbsoluteError': 6.390403975856131, 'test_Bias_MeanError_pred_minus_actual': 0.2254504933602209}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "HistGradientBoostingRegressor",
+          "model_name": "HistGradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.7493467479813,
+          "test_RMSE": 19.74844532106776,
+          "test_R2": 0.894348087748373,
+          "test_MedianAbsoluteError": 5.740889001337664,
+          "test_Bias_MeanError_pred_minus_actual": -0.0085716894775642
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': 'a485994a290efda7cf98642a', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'HistGradientBoostingRegressor', 'model_name': 'HistGradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.7493467479813, 'test_RMSE': 19.74844532106776, 'test_R2': 0.894348087748373, 'test_MedianAbsoluteError': 5.740889001337664, 'test_Bias_MeanError_pred_minus_actual': -0.0085716894775642}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ElasticNet_baseline",
+          "model_name": "ElasticNet_baseline",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.115337902266024,
+          "test_RMSE": 20.671734510724,
+          "test_R2": 0.8842381721414496,
+          "test_MedianAbsoluteError": 7.162265281649511,
+          "test_Bias_MeanError_pred_minus_actual": -0.2000042423643876
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': '89b36381aa9d4e69740d11e1', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ElasticNet_baseline', 'model_name': 'ElasticNet_baseline', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.115337902266024, 'test_RMSE': 20.671734510724, 'test_R2': 0.8842381721414496, 'test_MedianAbsoluteError': 7.162265281649511, 'test_Bias_MeanError_pred_minus_actual': -0.2000042423643876}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ExtraTreesRegressor",
+          "model_name": "ExtraTreesRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.833682165613885,
+          "test_RMSE": 19.944390702738016,
+          "test_R2": 0.8922411160591652,
+          "test_MedianAbsoluteError": 6.411958531746066,
+          "test_Bias_MeanError_pred_minus_actual": 0.1660400795516068
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': '0fea651498f2d1dd1b212139', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ExtraTreesRegressor', 'model_name': 'ExtraTreesRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.833682165613885, 'test_RMSE': 19.944390702738016, 'test_R2': 0.8922411160591652, 'test_MedianAbsoluteError': 6.411958531746066, 'test_Bias_MeanError_pred_minus_actual': 0.1660400795516068}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5845669507980347 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+            "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+            "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+            "/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json"
+          ],
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "metrics_schema_fixed": true,
+          "model_library_availability_documented": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5845669507980347, {'id': '6a08d70dcca2db1641919770', 'ts': '2026-07-31 06:05:10', 'kind': 'pipeline_state', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'artifacts_saved': ['/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', '/content/pavement_agentic_workspace/metrics/best_model_selection.json', '/content/pavement_agentic_workspace/metrics/model_library_availability.json', '/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json'], 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'metrics_schema_fixed': True, 'model_library_availability_documented': True}})",
+        "kind": "model_metrics"
+      },
+      {
+        "text": "0.5346192121505737 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "selection_rule": "Lowest test RMSE, with test MAE as tie-breaker.",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5346192121505737, {'id': '479f0c0dc2a722c5a5416cdc', 'ts': '2026-07-31 06:05:10', 'kind': 'results', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'selection_rule': 'Lowest test RMSE, with test MAE as tie-breaker.', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json'}})",
+        "kind": "model_metrics"
+      }
+    ],
+    "model_metrics_per_model": [
+      {
+        "text": "0.6749999523162842 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_library_availability_path": "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+          "metrics_long_schema": [
+            "model_name",
+            "metric_name",
+            "value",
+            "timestamp"
+          ]
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '0a48648c6cc56e76eb4b506b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_library_availability_path': '/content/pavement_agentic_workspace/metrics/model_library_availability.json', 'metrics_long_schema': ['model_name', 'metric_name', 'value', 'timestamp']}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "GradientBoostingRegressor",
+          "model_name": "GradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.968254255765796,
+          "test_RMSE": 20.42179535138922,
+          "test_R2": 0.887020570388342,
+          "test_MedianAbsoluteError": 6.655984645866255,
+          "test_Bias_MeanError_pred_minus_actual": -0.1498008425483942
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': 'f7b5961c421944a8a6305ae0', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'GradientBoostingRegressor', 'model_name': 'GradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.968254255765796, 'test_RMSE': 20.42179535138922, 'test_R2': 0.887020570388342, 'test_MedianAbsoluteError': 6.655984645866255, 'test_Bias_MeanError_pred_minus_actual': -0.1498008425483942}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "RandomForestRegressor",
+          "model_name": "RandomForestRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.04845054637885,
+          "test_RMSE": 20.62193451772352,
+          "test_R2": 0.8847952607686442,
+          "test_MedianAbsoluteError": 6.390403975856131,
+          "test_Bias_MeanError_pred_minus_actual": 0.2254504933602209
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': 'b99bba7fc357b980ccd1000b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'RandomForestRegressor', 'model_name': 'RandomForestRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.04845054637885, 'test_RMSE': 20.62193451772352, 'test_R2': 0.8847952607686442, 'test_MedianAbsoluteError': 6.390403975856131, 'test_Bias_MeanError_pred_minus_actual': 0.2254504933602209}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "HistGradientBoostingRegressor",
+          "model_name": "HistGradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.7493467479813,
+          "test_RMSE": 19.74844532106776,
+          "test_R2": 0.894348087748373,
+          "test_MedianAbsoluteError": 5.740889001337664,
+          "test_Bias_MeanError_pred_minus_actual": -0.0085716894775642
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': 'a485994a290efda7cf98642a', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'HistGradientBoostingRegressor', 'model_name': 'HistGradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.7493467479813, 'test_RMSE': 19.74844532106776, 'test_R2': 0.894348087748373, 'test_MedianAbsoluteError': 5.740889001337664, 'test_Bias_MeanError_pred_minus_actual': -0.0085716894775642}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ElasticNet_baseline",
+          "model_name": "ElasticNet_baseline",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.115337902266024,
+          "test_RMSE": 20.671734510724,
+          "test_R2": 0.8842381721414496,
+          "test_MedianAbsoluteError": 7.162265281649511,
+          "test_Bias_MeanError_pred_minus_actual": -0.2000042423643876
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': '89b36381aa9d4e69740d11e1', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ElasticNet_baseline', 'model_name': 'ElasticNet_baseline', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.115337902266024, 'test_RMSE': 20.671734510724, 'test_R2': 0.8842381721414496, 'test_MedianAbsoluteError': 7.162265281649511, 'test_Bias_MeanError_pred_minus_actual': -0.2000042423643876}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ExtraTreesRegressor",
+          "model_name": "ExtraTreesRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.833682165613885,
+          "test_RMSE": 19.944390702738016,
+          "test_R2": 0.8922411160591652,
+          "test_MedianAbsoluteError": 6.411958531746066,
+          "test_Bias_MeanError_pred_minus_actual": 0.1660400795516068
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': '0fea651498f2d1dd1b212139', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ExtraTreesRegressor', 'model_name': 'ExtraTreesRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.833682165613885, 'test_RMSE': 19.944390702738016, 'test_R2': 0.8922411160591652, 'test_MedianAbsoluteError': 6.411958531746066, 'test_Bias_MeanError_pred_minus_actual': 0.1660400795516068}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.6710892915725708 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+            "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+            "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+            "/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json"
+          ],
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "metrics_schema_fixed": true,
+          "model_library_availability_documented": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6710892915725708, {'id': '6a08d70dcca2db1641919770', 'ts': '2026-07-31 06:05:10', 'kind': 'pipeline_state', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'artifacts_saved': ['/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', '/content/pavement_agentic_workspace/metrics/best_model_selection.json', '/content/pavement_agentic_workspace/metrics/model_library_availability.json', '/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json'], 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'metrics_schema_fixed': True, 'model_library_availability_documented': True}})",
+        "kind": "model_metrics_per_model"
+      },
+      {
+        "text": "0.4647461175918579 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "selection_rule": "Lowest test RMSE, with test MAE as tie-breaker.",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4647461175918579, {'id': '479f0c0dc2a722c5a5416cdc', 'ts': '2026-07-31 06:05:10', 'kind': 'results', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'selection_rule': 'Lowest test RMSE, with test MAE as tie-breaker.', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json'}})",
+        "kind": "model_metrics_per_model"
+      }
+    ],
+    "results": [
+      {
+        "text": "0.6749999523162842 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+            "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+            "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+            "/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json"
+          ],
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "metrics_schema_fixed": true,
+          "model_library_availability_documented": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '6a08d70dcca2db1641919770', 'ts': '2026-07-31 06:05:10', 'kind': 'pipeline_state', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'artifacts_saved': ['/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', '/content/pavement_agentic_workspace/metrics/best_model_selection.json', '/content/pavement_agentic_workspace/metrics/model_library_availability.json', '/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json'], 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'metrics_schema_fixed': True, 'model_library_availability_documented': True}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.6076504588127136 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "selection_rule": "Lowest test RMSE, with test MAE as tie-breaker.",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6076504588127136, {'id': '479f0c0dc2a722c5a5416cdc', 'ts': '2026-07-31 06:05:10', 'kind': 'results', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'selection_rule': 'Lowest test RMSE, with test MAE as tie-breaker.', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json'}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5609699487686157 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_library_availability_path": "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+          "metrics_long_schema": [
+            "model_name",
+            "metric_name",
+            "value",
+            "timestamp"
+          ]
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5609699487686157, {'id': '0a48648c6cc56e76eb4b506b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_library_availability_path': '/content/pavement_agentic_workspace/metrics/model_library_availability.json', 'metrics_long_schema': ['model_name', 'metric_name', 'value', 'timestamp']}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ElasticNet_baseline",
+          "model_name": "ElasticNet_baseline",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.115337902266024,
+          "test_RMSE": 20.671734510724,
+          "test_R2": 0.8842381721414496,
+          "test_MedianAbsoluteError": 7.162265281649511,
+          "test_Bias_MeanError_pred_minus_actual": -0.2000042423643876
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5, {'id': '89b36381aa9d4e69740d11e1', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ElasticNet_baseline', 'model_name': 'ElasticNet_baseline', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.115337902266024, 'test_RMSE': 20.671734510724, 'test_R2': 0.8842381721414496, 'test_MedianAbsoluteError': 7.162265281649511, 'test_Bias_MeanError_pred_minus_actual': -0.2000042423643876}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "HistGradientBoostingRegressor",
+          "model_name": "HistGradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.7493467479813,
+          "test_RMSE": 19.74844532106776,
+          "test_R2": 0.894348087748373,
+          "test_MedianAbsoluteError": 5.740889001337664,
+          "test_Bias_MeanError_pred_minus_actual": -0.0085716894775642
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5, {'id': 'a485994a290efda7cf98642a', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'HistGradientBoostingRegressor', 'model_name': 'HistGradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.7493467479813, 'test_RMSE': 19.74844532106776, 'test_R2': 0.894348087748373, 'test_MedianAbsoluteError': 5.740889001337664, 'test_Bias_MeanError_pred_minus_actual': -0.0085716894775642}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ExtraTreesRegressor",
+          "model_name": "ExtraTreesRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.833682165613885,
+          "test_RMSE": 19.944390702738016,
+          "test_R2": 0.8922411160591652,
+          "test_MedianAbsoluteError": 6.411958531746066,
+          "test_Bias_MeanError_pred_minus_actual": 0.1660400795516068
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5, {'id': '0fea651498f2d1dd1b212139', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ExtraTreesRegressor', 'model_name': 'ExtraTreesRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.833682165613885, 'test_RMSE': 19.944390702738016, 'test_R2': 0.8922411160591652, 'test_MedianAbsoluteError': 6.411958531746066, 'test_Bias_MeanError_pred_minus_actual': 0.1660400795516068}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "GradientBoostingRegressor",
+          "model_name": "GradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.968254255765796,
+          "test_RMSE": 20.42179535138922,
+          "test_R2": 0.887020570388342,
+          "test_MedianAbsoluteError": 6.655984645866255,
+          "test_Bias_MeanError_pred_minus_actual": -0.1498008425483942
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5, {'id': 'f7b5961c421944a8a6305ae0', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'GradientBoostingRegressor', 'model_name': 'GradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.968254255765796, 'test_RMSE': 20.42179535138922, 'test_R2': 0.887020570388342, 'test_MedianAbsoluteError': 6.655984645866255, 'test_Bias_MeanError_pred_minus_actual': -0.1498008425483942}})",
+        "kind": "results"
+      },
+      {
+        "text": "0.5 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "RandomForestRegressor",
+          "model_name": "RandomForestRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.04845054637885,
+          "test_RMSE": 20.62193451772352,
+          "test_R2": 0.8847952607686442,
+          "test_MedianAbsoluteError": 6.390403975856131,
+          "test_Bias_MeanError_pred_minus_actual": 0.2254504933602209
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5, {'id': 'b99bba7fc357b980ccd1000b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'RandomForestRegressor', 'model_name': 'RandomForestRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.04845054637885, 'test_RMSE': 20.62193451772352, 'test_R2': 0.8847952607686442, 'test_MedianAbsoluteError': 6.390403975856131, 'test_Bias_MeanError_pred_minus_actual': 0.2254504933602209}})",
+        "kind": "results"
+      }
+    ],
+    "pipeline_state": [
+      {
+        "text": "0.6749999523162842 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+            "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+            "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+            "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+            "/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json"
+          ],
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "metrics_schema_fixed": true,
+          "model_library_availability_documented": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '6a08d70dcca2db1641919770', 'ts': '2026-07-31 06:05:10', 'kind': 'pipeline_state', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 PIPELINE_STATE_COMPLETED=MODEL_TRAIN_EVALUATE; metrics long-schema audit/fix complete; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'artifacts_saved': ['/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', '/content/pavement_agentic_workspace/metrics/best_model_selection.json', '/content/pavement_agentic_workspace/metrics/model_library_availability.json', '/content/pavement_agentic_workspace/model_train_evaluate_reviewer_audit.json'], 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'metrics_schema_fixed': True, 'model_library_availability_documented': True}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4416666626930237 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ElasticNet_baseline",
+          "model_name": "ElasticNet_baseline",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.115337902266024,
+          "test_RMSE": 20.671734510724,
+          "test_R2": 0.8842381721414496,
+          "test_MedianAbsoluteError": 7.162265281649511,
+          "test_Bias_MeanError_pred_minus_actual": -0.2000042423643876
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4416666626930237, {'id': '89b36381aa9d4e69740d11e1', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ElasticNet_baseline; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ElasticNet_baseline', 'model_name': 'ElasticNet_baseline', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.115337902266024, 'test_RMSE': 20.671734510724, 'test_R2': 0.8842381721414496, 'test_MedianAbsoluteError': 7.162265281649511, 'test_Bias_MeanError_pred_minus_actual': -0.2000042423643876}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4416666626930237 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "ExtraTreesRegressor",
+          "model_name": "ExtraTreesRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.833682165613885,
+          "test_RMSE": 19.944390702738016,
+          "test_R2": 0.8922411160591652,
+          "test_MedianAbsoluteError": 6.411958531746066,
+          "test_Bias_MeanError_pred_minus_actual": 0.1660400795516068
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4416666626930237, {'id': '0fea651498f2d1dd1b212139', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=ExtraTreesRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'ExtraTreesRegressor', 'model_name': 'ExtraTreesRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.833682165613885, 'test_RMSE': 19.944390702738016, 'test_R2': 0.8922411160591652, 'test_MedianAbsoluteError': 6.411958531746066, 'test_Bias_MeanError_pred_minus_actual': 0.1660400795516068}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4416666626930237 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "GradientBoostingRegressor",
+          "model_name": "GradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.968254255765796,
+          "test_RMSE": 20.42179535138922,
+          "test_R2": 0.887020570388342,
+          "test_MedianAbsoluteError": 6.655984645866255,
+          "test_Bias_MeanError_pred_minus_actual": -0.1498008425483942
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4416666626930237, {'id': 'f7b5961c421944a8a6305ae0', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=GradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'GradientBoostingRegressor', 'model_name': 'GradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.968254255765796, 'test_RMSE': 20.42179535138922, 'test_R2': 0.887020570388342, 'test_MedianAbsoluteError': 6.655984645866255, 'test_Bias_MeanError_pred_minus_actual': -0.1498008425483942}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4416666626930237 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "RandomForestRegressor",
+          "model_name": "RandomForestRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 11.04845054637885,
+          "test_RMSE": 20.62193451772352,
+          "test_R2": 0.8847952607686442,
+          "test_MedianAbsoluteError": 6.390403975856131,
+          "test_Bias_MeanError_pred_minus_actual": 0.2254504933602209
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4416666626930237, {'id': 'b99bba7fc357b980ccd1000b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=RandomForestRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'RandomForestRegressor', 'model_name': 'RandomForestRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 11.04845054637885, 'test_RMSE': 20.62193451772352, 'test_R2': 0.8847952607686442, 'test_MedianAbsoluteError': 6.390403975856131, 'test_Bias_MeanError_pred_minus_actual': 0.2254504933602209}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4416666626930237 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "model": "HistGradientBoostingRegressor",
+          "model_name": "HistGradientBoostingRegressor",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "test_MAE": 10.7493467479813,
+          "test_RMSE": 19.74844532106776,
+          "test_R2": 0.894348087748373,
+          "test_MedianAbsoluteError": 5.740889001337664,
+          "test_Bias_MeanError_pred_minus_actual": -0.0085716894775642
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4416666626930237, {'id': 'a485994a290efda7cf98642a', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics_per_model', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 metrics per model; model=HistGradientBoostingRegressor; target=IRI_mean_y; long_schema=model_name,metric_name,value,timestamp', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'model': 'HistGradientBoostingRegressor', 'model_name': 'HistGradientBoostingRegressor', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'test_MAE': 10.7493467479813, 'test_RMSE': 19.74844532106776, 'test_R2': 0.894348087748373, 'test_MedianAbsoluteError': 5.740889001337664, 'test_Bias_MeanError_pred_minus_actual': -0.0085716894775642}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.4192168116569519 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "selection_rule": "Lowest test RMSE, with test MAE as tie-breaker.",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.4192168116569519, {'id': '479f0c0dc2a722c5a5416cdc', 'ts': '2026-07-31 06:05:10', 'kind': 'results', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 results best_model=HistGradientBoostingRegressor; target=IRI_mean_y; selection_rule=lowest test RMSE with test MAE tie-breaker; test_RMSE=19.748445; test_MAE=10.749347', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'selection_rule': 'Lowest test RMSE, with test MAE as tie-breaker.', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json'}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.40365663170814514 | MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "MODEL_TRAIN_EVALUATE",
+          "target": "IRI_mean_y",
+          "audit_run_id": "MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8",
+          "best_model": "HistGradientBoostingRegressor",
+          "best_test_RMSE": 19.74844532106776,
+          "best_test_MAE": 10.7493467479813,
+          "best_test_R2": 0.894348087748373,
+          "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+          "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+          "best_model_selection_path": "/content/pavement_agentic_workspace/metrics/best_model_selection.json",
+          "model_library_availability_path": "/content/pavement_agentic_workspace/metrics/model_library_availability.json",
+          "metrics_long_schema": [
+            "model_name",
+            "metric_name",
+            "value",
+            "timestamp"
+          ]
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.40365663170814514, {'id': '0a48648c6cc56e76eb4b506b', 'ts': '2026-07-31 06:05:10', 'kind': 'model_metrics', 'text': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8 MODEL_METRICS long-schema audit/fix; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; test_RMSE=19.748445; long_csv=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv; long_json=/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'MODEL_TRAIN_EVALUATE', 'target': 'IRI_mean_y', 'audit_run_id': 'MODEL_TRAIN_EVALUATE_METRICS_AUDIT_f5bf42d014d8', 'best_model': 'HistGradientBoostingRegressor', 'best_test_RMSE': 19.74844532106776, 'best_test_MAE': 10.7493467479813, 'best_test_R2': 0.894348087748373, 'model_comparison_metrics_long_csv': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv', 'model_comparison_metrics_long_json': '/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json', 'best_model_selection_path': '/content/pavement_agentic_workspace/metrics/best_model_selection.json', 'model_library_availability_path': '/content/pavement_agentic_workspace/metrics/model_library_availability.json', 'metrics_long_schema': ['model_name', 'metric_name', 'value', 'timestamp']}})",
+        "kind": "pipeline_state"
+      }
+    ]
+  },
+  "registry_checks": {
+    "dataset_path_source": "mm.validate_registry(WORK_DIR)",
+    "DATASET_ID": "c1ba44638d60",
+    "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+    "file_path_exists": true,
+    "PINNED_FILE_PATH_matches_registry_or_unset": true,
+    "no_synthetic_dummy_random_placeholder_dataframe_used": true
+  },
+  "errors_or_missing_gates": []
+}

@@ -1,0 +1,91 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "selection_rule": "Lowest test RMSE, with test MAE as tie-breaker.",
+  "best_model": "HistGradientBoostingRegressor",
+  "best_model_pipeline_path": "/content/pavement_agentic_workspace/models/best_model_pipeline.joblib",
+  "best_model_original_path": "/content/pavement_agentic_workspace/models/HistGradientBoostingRegressor_pipeline.joblib",
+  "best_test_RMSE": 19.74844532106776,
+  "best_test_MAE": 10.7493467479813,
+  "best_test_R2": 0.894348087748373,
+  "all_models_ranked": [
+    {
+      "model": "HistGradientBoostingRegressor",
+      "test_RMSE": 19.748445321067756,
+      "test_MAE": 10.7493467479813,
+      "test_R2": 0.894348087748373,
+      "test_MedianAbsoluteError": 5.7408890013376634,
+      "test_Bias_MeanError_pred_minus_actual": -0.008571689477564294
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "test_RMSE": 19.944390702738016,
+      "test_MAE": 10.833682165613885,
+      "test_R2": 0.8922411160591652,
+      "test_MedianAbsoluteError": 6.411958531746066,
+      "test_Bias_MeanError_pred_minus_actual": 0.16604007955160685
+    },
+    {
+      "model": "GradientBoostingRegressor",
+      "test_RMSE": 20.42179535138922,
+      "test_MAE": 10.968254255765796,
+      "test_R2": 0.887020570388342,
+      "test_MedianAbsoluteError": 6.655984645866255,
+      "test_Bias_MeanError_pred_minus_actual": -0.14980084254839424
+    },
+    {
+      "model": "RandomForestRegressor",
+      "test_RMSE": 20.621934517723517,
+      "test_MAE": 11.04845054637885,
+      "test_R2": 0.8847952607686442,
+      "test_MedianAbsoluteError": 6.390403975856131,
+      "test_Bias_MeanError_pred_minus_actual": 0.22545049336022094
+    },
+    {
+      "model": "ElasticNet_baseline",
+      "test_RMSE": 20.671734510723994,
+      "test_MAE": 11.115337902266024,
+      "test_R2": 0.8842381721414496,
+      "test_MedianAbsoluteError": 7.1622652816495105,
+      "test_Bias_MeanError_pred_minus_actual": -0.20000424236438766
+    }
+  ],
+  "updated_at_utc": "2026-07-31T06:05:10.084815+00:00",
+  "model_comparison_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.csv",
+  "model_comparison_metrics_long_json": "/content/pavement_agentic_workspace/metrics/model_comparison_metrics_long.json",
+  "source_metrics_summary_csv": "/content/pavement_agentic_workspace/metrics/model_metrics_summary.csv",
+  "ranked_models_from_long_metrics": [
+    {
+      "model_name": "HistGradientBoostingRegressor",
+      "test_RMSE": 19.74844532106776,
+      "test_MAE": 10.7493467479813,
+      "test_R2": 0.894348087748373
+    },
+    {
+      "model_name": "ExtraTreesRegressor",
+      "test_RMSE": 19.944390702738016,
+      "test_MAE": 10.833682165613885,
+      "test_R2": 0.8922411160591652
+    },
+    {
+      "model_name": "GradientBoostingRegressor",
+      "test_RMSE": 20.42179535138922,
+      "test_MAE": 10.968254255765796,
+      "test_R2": 0.887020570388342
+    },
+    {
+      "model_name": "RandomForestRegressor",
+      "test_RMSE": 20.62193451772352,
+      "test_MAE": 11.04845054637885,
+      "test_R2": 0.8847952607686442
+    },
+    {
+      "model_name": "ElasticNet_baseline",
+      "test_RMSE": 20.671734510723997,
+      "test_MAE": 11.115337902266024,
+      "test_R2": 0.8842381721414496
+    }
+  ]
+}

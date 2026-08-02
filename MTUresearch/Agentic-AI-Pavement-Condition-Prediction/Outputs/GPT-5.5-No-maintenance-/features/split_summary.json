@@ -1,0 +1,21 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "random_state": 42,
+  "initial_rows": 6444,
+  "missing_or_non_numeric_target_rows_dropped": 0,
+  "rows_after_target_drop": 6444,
+  "train_rows": 4510,
+  "validation_rows": 967,
+  "test_rows": 967,
+  "train_fraction": 0.6998758535071384,
+  "validation_fraction": 0.15006207324643078,
+  "test_fraction": 0.15006207324643078,
+  "overlap_checks": {
+    "train_valid_overlap": 0,
+    "train_test_overlap": 0,
+    "valid_test_overlap": 0
+  }
+}

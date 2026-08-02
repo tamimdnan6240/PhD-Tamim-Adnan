@@ -1,0 +1,15 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "numeric_pipeline": [
+    "SimpleImputer(strategy='median')",
+    "Optional StandardScaler for scaled model"
+  ],
+  "categorical_pipeline": [
+    "SimpleImputer(strategy='constant', fill_value='Missing')",
+    "OneHotEncoder(handle_unknown='ignore', dense output)"
+  ],
+  "fit_rule": "All preprocessing fit only on training data inside sklearn Pipeline."
+}

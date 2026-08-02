@@ -1,0 +1,15 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "initial_rows": 6444,
+  "missing_or_non_numeric_target_count": 0,
+  "rows_used": 6444,
+  "count": 6444,
+  "min": 33.0,
+  "max": 396.0,
+  "mean": 111.77037554314091,
+  "median": 95.5,
+  "std": 59.191053194855265
+}

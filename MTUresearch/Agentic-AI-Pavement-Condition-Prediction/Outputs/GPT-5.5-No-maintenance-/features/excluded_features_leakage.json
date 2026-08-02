@@ -1,0 +1,11 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "excluded_features": {
+    "Future_AADT_mean_x": "excluded from primary strict model; temporally sensitive future/forecast input",
+    "IRI_mean_y": "approved target excluded from features"
+  },
+  "excluded_count": 2
+}

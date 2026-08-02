@@ -1,0 +1,32 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "created_at_utc": "2026-07-31T06:05:10.084815+00:00",
+  "libraries": {
+    "xgboost": {
+      "available": false,
+      "candidate_estimator": "XGBRegressor"
+    },
+    "lightgbm": {
+      "available": false,
+      "candidate_estimator": "LGBMRegressor"
+    },
+    "catboost": {
+      "available": false,
+      "candidate_estimator": "CatBoostRegressor"
+    }
+  },
+  "evaluated_models_from_existing_metrics": [
+    "ElasticNet_baseline",
+    "ExtraTreesRegressor",
+    "GradientBoostingRegressor",
+    "HistGradientBoostingRegressor",
+    "RandomForestRegressor"
+  ],
+  "sklearn_gradient_boosting_fallback_evaluated": true,
+  "note": "This metrics-audit/fix step did not retrain models. It documents library availability and confirms sklearn GradientBoostingRegressor was evaluated in the existing modeling run as the approved fallback path when external gradient-boosting libraries are not used.",
+  "any_external_gradient_boosting_library_available": false,
+  "fallback_documented": true
+}

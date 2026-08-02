@@ -1,0 +1,39 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "model": "ElasticNet_baseline",
+  "best_params": {
+    "model__l1_ratio": 0.7,
+    "model__alpha": 0.01
+  },
+  "cv_best_neg_rmse": -18.487867622789555,
+  "validation_metrics": {
+    "MAE": 11.087830077284174,
+    "RMSE": 18.703495496606685,
+    "R2": 0.9038292023044395,
+    "MedianAbsoluteError": 7.6222227617845135,
+    "Bias_MeanError_pred_minus_actual": -0.1244000356279235,
+    "AbsError_P50": 7.6222227617845135,
+    "AbsError_P75": 12.165497086661254,
+    "AbsError_P90": 20.774864053981094,
+    "AbsError_P95": 33.08134391710452,
+    "MAPE_percent": 9.443519732006358
+  },
+  "test_metrics": {
+    "MAE": 11.115337902266024,
+    "RMSE": 20.671734510723994,
+    "R2": 0.8842381721414496,
+    "MedianAbsoluteError": 7.1622652816495105,
+    "Bias_MeanError_pred_minus_actual": -0.20000424236438766,
+    "AbsError_P50": 7.1622652816495105,
+    "AbsError_P75": 11.872040542772112,
+    "AbsError_P90": 20.269440142721134,
+    "AbsError_P95": 33.88812716013306,
+    "MAPE_percent": 9.160322721090681
+  },
+  "model_path": "/content/pavement_agentic_workspace/models/ElasticNet_baseline_pipeline.joblib",
+  "validation_predictions_path": "/content/pavement_agentic_workspace/predictions/validation_predictions_ElasticNet_baseline.csv",
+  "test_predictions_path": "/content/pavement_agentic_workspace/predictions/test_predictions_ElasticNet_baseline.csv"
+}

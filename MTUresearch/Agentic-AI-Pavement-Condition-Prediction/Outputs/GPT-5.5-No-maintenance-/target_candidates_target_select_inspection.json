@@ -1,0 +1,52 @@
+{
+  "state": "TARGET_SELECT",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+  "schema": [
+    "column",
+    "family",
+    "family_confidence",
+    "reasons",
+    "leakage_guard"
+  ],
+  "schema_exact_order": true,
+  "row_count": 4,
+  "candidate_rows_from_target_candidates_csv_only": [
+    {
+      "column": "IRI_mean_x",
+      "family": "iri",
+      "family_confidence": "high",
+      "reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+    },
+    {
+      "column": "IRI_mean_y",
+      "family": "iri",
+      "family_confidence": "high",
+      "reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+    },
+    {
+      "column": "Cracking_Percent_mean_x",
+      "family": "cracking_percent",
+      "family_confidence": "high",
+      "reasons": "Matched Cracking via substring 'cracking' or token 'crack'.; Name suggests percent measure (%, percent, or pct).",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+    },
+    {
+      "column": "Rutting_mean_x",
+      "family": "rutting",
+      "family_confidence": "medium",
+      "reasons": "Matched Rutting via substring 'rutting' or token 'rut'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+    }
+  ],
+  "memory_retrieval_counts_for_audit_only": {
+    "target_candidates": 3,
+    "dataset_artifact_COLUMNS": 3,
+    "model_metrics": 3,
+    "model_metrics_per_model": 10
+  },
+  "selection_constraint": "Final target must be selected only from target_candidates.csv rows; dataset_head.csv and dataset_profile.json were not inspected."
+}

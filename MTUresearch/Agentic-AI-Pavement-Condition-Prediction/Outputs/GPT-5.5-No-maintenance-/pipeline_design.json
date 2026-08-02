@@ -1,0 +1,263 @@
+{
+  "state": "PIPELINE_DESIGN",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "created_at_utc": "2026-07-31T05:56:19.760980Z",
+  "target": "IRI_mean_y",
+  "target_family": "iri",
+  "prediction_framing": "supervised regression, subject to downstream numeric validation",
+  "primary_leakage_rule": "Exclude IRI_mean_y and any post-period/outcome/future condition columns from features. Exclude Future_AADT_mean_x from the primary strict model unless explicitly treated as an available forecast-input scenario.",
+  "feature_eligibility": {
+    "mandatory_exclusions": [
+      "IRI_mean_y",
+      "Any non-target post-period/outcome/future condition columns",
+      "Any direct leakage aliases, duplicates, or transformations of IRI_mean_y",
+      "Any engineered feature calculated from IRI_mean_y"
+    ],
+    "temporal_risk_cautions": {
+      "IRI_mean_x": "Eligible only if verified as baseline/current condition measured before IRI_mean_y.",
+      "Rutting_mean_x": "Eligible only if verified as baseline/current, not outcome-period.",
+      "Cracking_Percent_mean_x": "Eligible only if verified as baseline/current, not outcome-period.",
+      "Faulting_mean_x": "Eligible only if verified as baseline/current, not outcome-period.",
+      "Future_AADT_mean_x": "Exclude from primary strict model by default. Include only in a documented forecast-input scenario if available at prediction time."
+    },
+    "candidate_feature_groups_subject_to_validation": {
+      "traffic": [
+        "AADT_mean_x",
+        "AADT_Single_Unit_mean_x",
+        "AADT_Combination_mean_x",
+        "Future_AADT_mean_x optional forecast-input scenario only"
+      ],
+      "baseline_current_condition": [
+        "IRI_mean_x",
+        "Rutting_mean_x",
+        "Cracking_Percent_mean_x",
+        "Faulting_mean_x"
+      ],
+      "pavement_structure": [
+        "Thickness_Rigid_mean_x",
+        "Thickness_Flexible_mean_x",
+        "Base_Thickness_mean_x",
+        "Last_Overlay_Thickness_mean_x"
+      ],
+      "functional_context": [
+        "F_System_mode",
+        "Urban_Type"
+      ],
+      "surface_base_material": [
+        "Surface_Type_mode",
+        "Base_Type_mode_x"
+      ],
+      "climate_environment": [
+        "RHU_AV_x",
+        "FRZ_IDX_x",
+        "TEMP_AVG_x",
+        "PRECIPITATION_x"
+      ],
+      "age": [
+        "Age_x"
+      ]
+    }
+  },
+  "preprocessing_plan": {
+    "target_handling": [
+      "Validate IRI_mean_y exists.",
+      "Validate target is numeric or safely coercible to numeric.",
+      "Drop rows with missing target.",
+      "Save target diagnostics: count, missing count, min, max, mean, median, standard deviation, histogram, and boxplot."
+    ],
+    "numeric_features": [
+      "Coerce numeric columns to numeric where safe.",
+      "Median-impute missing numeric values.",
+      "Optionally add missingness indicators.",
+      "Scale numeric features for linear/SVR/neural models; tree models do not require scaling."
+    ],
+    "categorical_features": [
+      "Treat object/category/string columns as categorical.",
+      "Impute missing categoricals with 'Missing'.",
+      "One-hot encode with handle_unknown='ignore'.",
+      "Report cardinality and consider rare-level grouping if needed."
+    ],
+    "feature_engineering": {
+      "allowed_only_from_leakage_safe_features": true,
+      "examples": [
+        "AADT_Single_Unit_mean_x / AADT_mean_x",
+        "AADT_Combination_mean_x / AADT_mean_x",
+        "Total structural thickness from available pavement/base thickness variables",
+        "FRZ_IDX_x * PRECIPITATION_x",
+        "TEMP_AVG_x * PRECIPITATION_x",
+        "Age_x * IRI_mean_x",
+        "Age_x * Cracking_Percent_mean_x"
+      ],
+      "implementation_rule": "All engineered features must be computed inside train-only preprocessing or after split using train-fitted transformations where applicable."
+    },
+    "leakage_prevention": "All preprocessing must be fit only on training folds using sklearn-compatible pipelines."
+  },
+  "split_strategy": {
+    "default": "70/15/15 train/validation/test split with fixed RANDOM_STATE=42.",
+    "current_basis": "No approved grouping/location identifier or temporal/year column has been established for splitting, so randomized split is the default design.",
+    "upgrade_if_group_identifier_found": "Use GroupShuffleSplit or grouped train/test split to prevent same pavement segment from appearing in both train and test.",
+    "upgrade_if_temporal_identifier_validated": "Prefer temporal holdout: train on earlier period, validate on intermediate period, test on latest period.",
+    "tuning_policy": "Training set for fitting; validation set or cross-validation within training for tuning; held-out test set used once for final comparison."
+  },
+  "models_to_optimize": [
+    {
+      "name": "HistGradientBoostingRegressor",
+      "tune": [
+        "learning_rate",
+        "max_iter",
+        "max_leaf_nodes",
+        "min_samples_leaf",
+        "l2_regularization"
+      ]
+    },
+    {
+      "name": "ExtraTreesRegressor or RandomForestRegressor",
+      "tune": [
+        "n_estimators",
+        "max_depth",
+        "min_samples_split",
+        "min_samples_leaf",
+        "max_features",
+        "bootstrap where applicable"
+      ]
+    },
+    {
+      "name": "XGBRegressor/LGBMRegressor/CatBoostRegressor if available, otherwise sklearn GradientBoostingRegressor",
+      "tune": [
+        "n_estimators",
+        "learning_rate",
+        "max_depth or num_leaves",
+        "subsampling",
+        "column sampling",
+        "regularization"
+      ]
+    }
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "R2",
+    "MedianAbsoluteError",
+    "Bias / Mean Error",
+    "Optional MAPE or sMAPE if target values are not near zero",
+    "Error percentiles P50/P75/P90/P95 absolute error",
+    "Optional tolerance accuracy after target unit validation"
+  ],
+  "interpretation_plan": [
+    "Permutation feature importance on validation/test set.",
+    "Tree-based impurity/importances as secondary evidence.",
+    "SHAP global summary and dependence plots if package is available.",
+    "Predicted vs actual plots with 1:1 reference line.",
+    "Residual histogram.",
+    "Residuals vs predicted.",
+    "Residuals vs major engineering covariates if available.",
+    "Leakage sanity check confirming target and suspicious future/outcome variables are absent from final feature list."
+  ],
+  "required_outputs": {
+    "directories": [
+      "models",
+      "metrics",
+      "predictions",
+      "plots",
+      "features"
+    ],
+    "feature_artifacts": [
+      "features/final_feature_list.json",
+      "features/excluded_features_leakage.json",
+      "features/preprocessing_schema.json"
+    ],
+    "split_artifacts": [
+      "features/train_valid_test_indices.json or CSV",
+      "split summary JSON"
+    ],
+    "diagnostic_charts": [
+      "target distribution",
+      "missingness",
+      "numeric correlation heatmap for leakage-safe features",
+      "predicted vs actual plots",
+      "residual plots",
+      "feature importance plots"
+    ],
+    "metrics_artifacts": [
+      "metrics/model_metrics_summary.csv",
+      "metrics/model_metrics_summary.json",
+      "per-model metrics JSON files"
+    ],
+    "prediction_artifacts": [
+      "predictions/test_predictions_<model>.csv",
+      "predictions/validation_predictions_<model>.csv"
+    ],
+    "model_artifacts": [
+      "models/<model_name>_pipeline.joblib",
+      "models/best_model_pipeline.joblib"
+    ],
+    "model_comparison": [
+      "ranking by primary metric: lowest test RMSE with MAE and R2 also reported",
+      "metrics/best_model_selection.json"
+    ]
+  },
+  "reviewer_gates_before_modeling": {
+    "registry_data_governance": [
+      "mm.validate_registry(WORK_DIR) used as only dataset source.",
+      "FILE_PATH exists.",
+      "FILE_PATH is not inside WORK_DIR.",
+      "PINNED_FILE_PATH, if set, matches registry path.",
+      "No synthetic, dummy, random, or placeholder dataframe is used."
+    ],
+    "target_gate": [
+      "Target is exactly IRI_mean_y.",
+      "Target exists in loaded dataset.",
+      "Target is numeric or safely coercible to numeric.",
+      "Rows with missing target are handled explicitly.",
+      "Target is excluded from features."
+    ],
+    "leakage_gate": [
+      "Final feature list excludes IRI_mean_y.",
+      "Final feature list excludes any _y post-period/outcome columns.",
+      "Final feature list excludes any columns with future/outcome/target leakage semantics.",
+      "Future_AADT_mean_x excluded from primary strict model unless documented scenario feature.",
+      "Feature list and exclusions saved to artifact."
+    ],
+    "preprocessing_gate": [
+      "Preprocessing implemented inside train-fitted pipelines.",
+      "Imputers, encoders, scalers fit only on training data.",
+      "No target-derived feature engineering."
+    ],
+    "split_gate": [
+      "Train/validation/test split saved.",
+      "No row appears in more than one split.",
+      "Split sizes reported.",
+      "Grouped or temporal split considered if valid identifiers are later discovered."
+    ],
+    "modeling_gate": [
+      "At least three advanced models optimized.",
+      "Hyperparameter search configuration saved.",
+      "Validation metrics saved.",
+      "Final test metrics saved only after model selection."
+    ],
+    "artifact_gate": [
+      "All outputs saved inside WORK_DIR.",
+      "Metrics, predictions, models, feature lists, and charts saved.",
+      "MM records added with minimum metadata.",
+      "Pipeline completion record added only after all required artifacts exist."
+    ]
+  },
+  "mm_logging_plan": {
+    "record_kinds": [
+      "pipeline_design",
+      "feature_artifact",
+      "model_metrics",
+      "model_metrics_per_model",
+      "model_artifact",
+      "prediction_artifact",
+      "chart_artifact",
+      "pipeline_state"
+    ],
+    "minimum_meta": {
+      "dataset_id": "c1ba44638d60",
+      "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+      "state": "<STATE_NOW>"
+    }
+  }
+}

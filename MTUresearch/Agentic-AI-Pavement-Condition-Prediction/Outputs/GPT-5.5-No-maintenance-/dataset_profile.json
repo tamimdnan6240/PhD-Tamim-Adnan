@@ -1,0 +1,504 @@
+{
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "state": "DISCOVER_DATASET",
+  "created_at_utc": "2026-07-31T05:44:52.641060Z",
+  "shape": {
+    "rows": 6444,
+    "columns": 22
+  },
+  "columns": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "IRI_mean_y",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "dtypes": {
+    "AADT_mean_x": "int64",
+    "AADT_Single_Unit_mean_x": "float64",
+    "AADT_Combination_mean_x": "float64",
+    "Future_AADT_mean_x": "float64",
+    "IRI_mean_x": "float64",
+    "Thickness_Rigid_mean_x": "float64",
+    "Thickness_Flexible_mean_x": "float64",
+    "Base_Thickness_mean_x": "float64",
+    "F_System_mode": "int64",
+    "Urban_Type": "object",
+    "Surface_Type_mode": "int64",
+    "Base_Type_mode_x": "int64",
+    "Rutting_mean_x": "float64",
+    "Cracking_Percent_mean_x": "float64",
+    "Faulting_mean_x": "float64",
+    "Last_Overlay_Thickness_mean_x": "float64",
+    "IRI_mean_y": "float64",
+    "RHU_AV_x": "float64",
+    "FRZ_IDX_x": "float64",
+    "TEMP_AVG_x": "float64",
+    "PRECIPITATION_x": "float64",
+    "Age_x": "int64"
+  },
+  "missing_counts": {
+    "AADT_mean_x": 0,
+    "AADT_Single_Unit_mean_x": 0,
+    "AADT_Combination_mean_x": 0,
+    "Future_AADT_mean_x": 0,
+    "IRI_mean_x": 0,
+    "Thickness_Rigid_mean_x": 0,
+    "Thickness_Flexible_mean_x": 0,
+    "Base_Thickness_mean_x": 0,
+    "F_System_mode": 0,
+    "Urban_Type": 0,
+    "Surface_Type_mode": 0,
+    "Base_Type_mode_x": 0,
+    "Rutting_mean_x": 0,
+    "Cracking_Percent_mean_x": 0,
+    "Faulting_mean_x": 0,
+    "Last_Overlay_Thickness_mean_x": 0,
+    "IRI_mean_y": 0,
+    "RHU_AV_x": 12,
+    "FRZ_IDX_x": 12,
+    "TEMP_AVG_x": 12,
+    "PRECIPITATION_x": 12,
+    "Age_x": 0
+  },
+  "missing_pct": {
+    "AADT_mean_x": 0.0,
+    "AADT_Single_Unit_mean_x": 0.0,
+    "AADT_Combination_mean_x": 0.0,
+    "Future_AADT_mean_x": 0.0,
+    "IRI_mean_x": 0.0,
+    "Thickness_Rigid_mean_x": 0.0,
+    "Thickness_Flexible_mean_x": 0.0,
+    "Base_Thickness_mean_x": 0.0,
+    "F_System_mode": 0.0,
+    "Urban_Type": 0.0,
+    "Surface_Type_mode": 0.0,
+    "Base_Type_mode_x": 0.0,
+    "Rutting_mean_x": 0.0,
+    "Cracking_Percent_mean_x": 0.0,
+    "Faulting_mean_x": 0.0,
+    "Last_Overlay_Thickness_mean_x": 0.0,
+    "IRI_mean_y": 0.0,
+    "RHU_AV_x": 0.00186219739292365,
+    "FRZ_IDX_x": 0.00186219739292365,
+    "TEMP_AVG_x": 0.00186219739292365,
+    "PRECIPITATION_x": 0.00186219739292365,
+    "Age_x": 0.0
+  },
+  "numeric_columns": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "IRI_mean_y",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "categorical_like_columns": [
+    "Urban_Type"
+  ],
+  "datetime_like_columns_by_name": [],
+  "duplicate_rows": 1,
+  "numeric_summary": {
+    "AADT_mean_x": {
+      "count": 6444.0,
+      "mean": 18369.676132836747,
+      "std": 25413.026538127622,
+      "min": 25.0,
+      "25%": 2908.75,
+      "50%": 9308.0,
+      "75%": 23045.25,
+      "max": 247870.0
+    },
+    "AADT_Single_Unit_mean_x": {
+      "count": 6444.0,
+      "mean": 791.6726101800124,
+      "std": 1159.6181496092836,
+      "min": 0.0,
+      "25%": 120.0,
+      "50%": 368.0,
+      "75%": 948.25,
+      "max": 12919.0
+    },
+    "AADT_Combination_mean_x": {
+      "count": 6444.0,
+      "mean": 1378.891061452514,
+      "std": 2780.877838744848,
+      "min": 0.0,
+      "25%": 75.0,
+      "50%": 247.0,
+      "75%": 894.25,
+      "max": 25855.0
+    },
+    "Future_AADT_mean_x": {
+      "count": 6444.0,
+      "mean": 22729.884993792675,
+      "std": 30960.200433909456,
+      "min": 27.0,
+      "25%": 3615.0,
+      "50%": 11500.0,
+      "75%": 28571.5,
+      "max": 289400.0
+    },
+    "IRI_mean_x": {
+      "count": 6444.0,
+      "mean": 98.12698634388578,
+      "std": 50.02564383069843,
+      "min": 30.0,
+      "25%": 61.8,
+      "50%": 85.0,
+      "75%": 121.92500000000001,
+      "max": 367.0
+    },
+    "Thickness_Rigid_mean_x": {
+      "count": 6444.0,
+      "mean": 2.2146182495344506,
+      "std": 3.939238232459553,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 4.0,
+      "max": 20.0
+    },
+    "Thickness_Flexible_mean_x": {
+      "count": 6444.0,
+      "mean": 6.440130353817504,
+      "std": 3.277976266150178,
+      "min": 0.0,
+      "25%": 4.0,
+      "50%": 6.0,
+      "75%": 8.0,
+      "max": 24.0
+    },
+    "Base_Thickness_mean_x": {
+      "count": 6444.0,
+      "mean": 11.861887026691496,
+      "std": 7.333845469918897,
+      "min": 0.3,
+      "25%": 6.0,
+      "50%": 10.0,
+      "75%": 16.0,
+      "max": 51.0
+    },
+    "F_System_mode": {
+      "count": 6444.0,
+      "mean": 3.138888888888889,
+      "std": 1.3488686370807286,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 6.0
+    },
+    "Surface_Type_mode": {
+      "count": 6444.0,
+      "mean": 4.637026691495965,
+      "std": 2.163501705401104,
+      "min": 2.0,
+      "25%": 2.0,
+      "50%": 6.0,
+      "75%": 6.0,
+      "max": 7.0
+    },
+    "Base_Type_mode_x": {
+      "count": 6444.0,
+      "mean": 2.729205462445686,
+      "std": 1.1250028735347246,
+      "min": 2.0,
+      "25%": 2.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 5.0
+    },
+    "Rutting_mean_x": {
+      "count": 6444.0,
+      "mean": 0.1618559900682806,
+      "std": 0.10753412833422459,
+      "min": 0.0,
+      "25%": 0.1,
+      "50%": 0.1,
+      "75%": 0.2,
+      "max": 1.0
+    },
+    "Cracking_Percent_mean_x": {
+      "count": 6444.0,
+      "mean": 4.3892302917442585,
+      "std": 9.453849545944243,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.5,
+      "75%": 4.0,
+      "max": 100.0
+    },
+    "Faulting_mean_x": {
+      "count": 6444.0,
+      "mean": 0.0004965859714463067,
+      "std": 0.007247331415634846,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 0.2
+    },
+    "Last_Overlay_Thickness_mean_x": {
+      "count": 6444.0,
+      "mean": 2.742892613283675,
+      "std": 2.283201735114445,
+      "min": 0.0,
+      "25%": 2.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 34.0
+    },
+    "IRI_mean_y": {
+      "count": 6444.0,
+      "mean": 111.77037554314091,
+      "std": 59.191053194855265,
+      "min": 33.0,
+      "25%": 68.0,
+      "50%": 95.5,
+      "75%": 138.0,
+      "max": 396.0
+    },
+    "RHU_AV_x": {
+      "count": 6432.0,
+      "mean": 74.2108830845771,
+      "std": 8.744139812355055,
+      "min": 31.9,
+      "25%": 73.8,
+      "50%": 76.8,
+      "75%": 78.2,
+      "max": 88.3
+    },
+    "FRZ_IDX_x": {
+      "count": 6432.0,
+      "mean": 368.4060478855721,
+      "std": 342.82879379174625,
+      "min": 0.0,
+      "25%": 77.6,
+      "50%": 299.4,
+      "75%": 489.4,
+      "max": 1709.7
+    },
+    "TEMP_AVG_x": {
+      "count": 6432.0,
+      "mean": 10.29981343283582,
+      "std": 3.9245543901925677,
+      "min": -0.4,
+      "25%": 8.2,
+      "50%": 10.0,
+      "75%": 11.5,
+      "max": 25.3
+    },
+    "PRECIPITATION_x": {
+      "count": 6432.0,
+      "mean": 1174.8363339552238,
+      "std": 382.30193793537785,
+      "min": 149.8,
+      "25%": 1059.85,
+      "50%": 1303.1,
+      "75%": 1382.1,
+      "max": 3145.3
+    },
+    "Age_x": {
+      "count": 6444.0,
+      "mean": 43.35474860335196,
+      "std": 26.84474318452857,
+      "min": 0.0,
+      "25%": 20.0,
+      "50%": 45.0,
+      "75%": 61.0,
+      "max": 172.0
+    }
+  },
+  "sample_values": {
+    "AADT_mean_x": [
+      "40961",
+      "26595",
+      "61960",
+      "52563",
+      "13206"
+    ],
+    "AADT_Single_Unit_mean_x": [
+      "820.0",
+      "878.0",
+      "744.0",
+      "1052.0",
+      "211.0"
+    ],
+    "AADT_Combination_mean_x": [
+      "2295.0",
+      "186.0",
+      "2851.0",
+      "2997.0",
+      "1267.0"
+    ],
+    "Future_AADT_mean_x": [
+      "40924.0",
+      "37230.0",
+      "62225.0",
+      "52581.0",
+      "13222.0"
+    ],
+    "IRI_mean_x": [
+      "64.0",
+      "172.8",
+      "102.8",
+      "65.5",
+      "55.0"
+    ],
+    "Thickness_Rigid_mean_x": [
+      "11.5",
+      "0.0",
+      "9.0",
+      "11.0",
+      "0.0"
+    ],
+    "Thickness_Flexible_mean_x": [
+      "0.0",
+      "3.0",
+      "0.0",
+      "0.0",
+      "5.0"
+    ],
+    "Base_Thickness_mean_x": [
+      "15.0",
+      "6.0",
+      "18.0",
+      "16.0",
+      "24.0"
+    ],
+    "F_System_mode": [
+      "1",
+      "3",
+      "2",
+      "1",
+      "1"
+    ],
+    "Urban_Type": [
+      "urban",
+      "urban",
+      "urban",
+      "urban",
+      "rural"
+    ],
+    "Surface_Type_mode": [
+      "3",
+      "2",
+      "3",
+      "3",
+      "2"
+    ],
+    "Base_Type_mode_x": [
+      "2",
+      "3",
+      "2",
+      "2",
+      "2"
+    ],
+    "Rutting_mean_x": [
+      "0.0",
+      "0.2",
+      "0.0",
+      "0.0",
+      "0.1"
+    ],
+    "Cracking_Percent_mean_x": [
+      "0.0",
+      "0.0",
+      "23.0",
+      "0.0",
+      "0.0"
+    ],
+    "Faulting_mean_x": [
+      "0.0",
+      "0.0",
+      "0.1",
+      "0.0",
+      "0.0"
+    ],
+    "Last_Overlay_Thickness_mean_x": [
+      "0.0",
+      "1.5",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "IRI_mean_y": [
+      "71.5",
+      "198.8",
+      "123.0",
+      "75.0",
+      "68.0"
+    ],
+    "RHU_AV_x": [
+      "76.2",
+      "67.1",
+      "76.2",
+      "76.4",
+      "78.5"
+    ],
+    "FRZ_IDX_x": [
+      "535.4",
+      "3.7",
+      "519.1",
+      "504.3",
+      "769.2"
+    ],
+    "TEMP_AVG_x": [
+      "8.5",
+      "19.6",
+      "8.7",
+      "8.3",
+      "6.5"
+    ],
+    "PRECIPITATION_x": [
+      "1068.6",
+      "933.1",
+      "1083.9",
+      "963.7",
+      "1021.7"
+    ],
+    "Age_x": [
+      "5",
+      "16",
+      "6",
+      "4",
+      "7"
+    ]
+  },
+  "no_synthetic_dummy_random_placeholder_dataframe_used": true,
+  "dataset_loaded_from_authoritative_validate_registry_path": true
+}

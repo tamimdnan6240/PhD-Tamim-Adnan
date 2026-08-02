@@ -1,0 +1,42 @@
+{
+  "state": "MODEL_TRAIN_EVALUATE",
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "target": "IRI_mean_y",
+  "model": "ExtraTreesRegressor",
+  "best_params": {
+    "model__n_estimators": 400,
+    "model__min_samples_split": 10,
+    "model__min_samples_leaf": 2,
+    "model__max_features": 0.7,
+    "model__max_depth": null
+  },
+  "cv_best_neg_rmse": -18.315832526804893,
+  "validation_metrics": {
+    "MAE": 10.804604076180633,
+    "RMSE": 18.465030359934502,
+    "R2": 0.906265878895087,
+    "MedianAbsoluteError": 6.588626984127011,
+    "Bias_MeanError_pred_minus_actual": 0.15712281150998675,
+    "AbsError_P50": 6.588626984127011,
+    "AbsError_P75": 12.362546577380868,
+    "AbsError_P90": 21.876567896825424,
+    "AbsError_P95": 31.02742584325406,
+    "MAPE_percent": 9.219509146172621
+  },
+  "test_metrics": {
+    "MAE": 10.833682165613885,
+    "RMSE": 19.944390702738016,
+    "R2": 0.8922411160591652,
+    "MedianAbsoluteError": 6.411958531746066,
+    "Bias_MeanError_pred_minus_actual": 0.16604007955160685,
+    "AbsError_P50": 6.411958531746066,
+    "AbsError_P75": 11.761228968253988,
+    "AbsError_P90": 21.9282972420636,
+    "AbsError_P95": 33.4337997619046,
+    "MAPE_percent": 8.853113755072835
+  },
+  "model_path": "/content/pavement_agentic_workspace/models/ExtraTreesRegressor_pipeline.joblib",
+  "validation_predictions_path": "/content/pavement_agentic_workspace/predictions/validation_predictions_ExtraTreesRegressor.csv",
+  "test_predictions_path": "/content/pavement_agentic_workspace/predictions/test_predictions_ExtraTreesRegressor.csv"
+}

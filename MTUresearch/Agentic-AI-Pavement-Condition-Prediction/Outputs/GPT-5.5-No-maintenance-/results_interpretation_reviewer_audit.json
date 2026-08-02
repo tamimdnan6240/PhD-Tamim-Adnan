@@ -1,0 +1,161 @@
+{
+  "hard_gate_passed": true,
+  "AUDIT_RUN_ID": "RESULTS_INTERPRETATION_AUDIT_4eb44ab91005",
+  "DATASET_ID": "c1ba44638d60",
+  "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "state": "RESULTS_INTERPRETATION",
+  "target": "IRI_mean_y",
+  "best_model": "HistGradientBoostingRegressor",
+  "approved_test_metrics": {
+    "RMSE": 19.74844532106776,
+    "MAE": 10.7493467479813,
+    "R2": 0.894348087748373
+  },
+  "artifact_paths": {
+    "results_interpretation_artifact_summary": "/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json",
+    "results_interpretation_report_md": "/content/pavement_agentic_workspace/results_interpretation_report.md",
+    "results_interpretation_report_json": "/content/pavement_agentic_workspace/results_interpretation_report.json",
+    "results_interpretation_reviewer_audit": "/content/pavement_agentic_workspace/results_interpretation_reviewer_audit.json"
+  },
+  "artifact_checks": {
+    "results_interpretation_artifact_summary.json": true,
+    "results_interpretation_report.md": true,
+    "results_interpretation_report.json": true,
+    "results_interpretation_reviewer_audit.json": true
+  },
+  "report_checks": {
+    "required_fields_present": {
+      "dataset_id": true,
+      "file_path": true,
+      "state": true,
+      "target": true,
+      "best_model": true,
+      "approved_test_metrics": true,
+      "engineering_interpretation_of_target_task": true,
+      "model_performance_interpretation": true,
+      "feature_importance_interpretation": true,
+      "leakage_exclusion_assessment": true,
+      "practical_asset_management_use_cases": true,
+      "limitations_cautions": true,
+      "recommended_engineering_validation_checks": true
+    },
+    "all_required_fields_present": true,
+    "dataset_id_matches_registry": true,
+    "file_path_matches_registry": true,
+    "state_is_RESULTS_INTERPRETATION": true,
+    "target_is_IRI_mean_y": true,
+    "best_model_is_HistGradientBoostingRegressor": true,
+    "approved_metrics_include_RMSE_MAE_R2": true,
+    "no_retraining_performed": true,
+    "modeling_outputs_modified_false": true
+  },
+  "mm_record_checks": {
+    "results_interpretation_record_exists": true,
+    "pipeline_state_completed_record_exists": true,
+    "results_interpretation_records_have_minimum_meta": true,
+    "pipeline_state_records_have_minimum_meta": true,
+    "all_retrieved_records_have_minimum_meta": true,
+    "pipeline_state_text_mentions_completion": true
+  },
+  "mm_retrieval_after_logging": {
+    "results_interpretation": [
+      {
+        "text": "0.6749999523162842 | RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 PIPELINE_STATE_COMPLETED=RESULTS_INTERPRETATION; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; reports_saved=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "RESULTS_INTERPRETATION",
+          "target": "IRI_mean_y",
+          "best_model": "HistGradientBoostingRegressor",
+          "audit_run_id": "RESULTS_INTERPRETATION_AUDIT_4eb44ab91005",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json",
+            "/content/pavement_agentic_workspace/results_interpretation_report.md",
+            "/content/pavement_agentic_workspace/results_interpretation_report.json",
+            "/content/pavement_agentic_workspace/results_interpretation_reviewer_audit.json"
+          ],
+          "report_md_path": "/content/pavement_agentic_workspace/results_interpretation_report.md",
+          "report_json_path": "/content/pavement_agentic_workspace/results_interpretation_report.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '022f31ef72d1cc0a22a5ab32', 'ts': '2026-07-31 06:11:18', 'kind': 'pipeline_state', 'text': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 PIPELINE_STATE_COMPLETED=RESULTS_INTERPRETATION; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; reports_saved=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'RESULTS_INTERPRETATION', 'target': 'IRI_mean_y', 'best_model': 'HistGradientBoostingRegressor', 'audit_run_id': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005', 'artifacts_saved': ['/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json', '/content/pavement_agentic_workspace/results_interpretation_report.md', '/content/pavement_agentic_workspace/results_interpretation_report.json', '/content/pavement_agentic_workspace/results_interpretation_reviewer_audit.json'], 'report_md_path': '/content/pavement_agentic_workspace/results_interpretation_report.md', 'report_json_path': '/content/pavement_agentic_workspace/results_interpretation_report.json'}})",
+        "kind": "results_interpretation"
+      },
+      {
+        "text": "0.5184697508811951 | RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 RESULTS_INTERPRETATION final engineering report saved; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; RMSE=19.74844532106776; MAE=10.7493467479813; R2=0.894348087748373; reports=/content/pavement_agentic_workspace/results_interpretation_report.md,/content/pavement_agentic_workspace/results_interpretation_report.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "RESULTS_INTERPRETATION",
+          "target": "IRI_mean_y",
+          "best_model": "HistGradientBoostingRegressor",
+          "audit_run_id": "RESULTS_INTERPRETATION_AUDIT_4eb44ab91005",
+          "report_md_path": "/content/pavement_agentic_workspace/results_interpretation_report.md",
+          "report_json_path": "/content/pavement_agentic_workspace/results_interpretation_report.json",
+          "source_artifact_summary_path": "/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json",
+          "approved_test_metrics": {
+            "RMSE": 19.74844532106776,
+            "MAE": 10.7493467479813,
+            "R2": 0.894348087748373
+          }
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5184697508811951, {'id': '47839dcab034461058f15db1', 'ts': '2026-07-31 06:11:18', 'kind': 'results_interpretation', 'text': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 RESULTS_INTERPRETATION final engineering report saved; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; RMSE=19.74844532106776; MAE=10.7493467479813; R2=0.894348087748373; reports=/content/pavement_agentic_workspace/results_interpretation_report.md,/content/pavement_agentic_workspace/results_interpretation_report.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'RESULTS_INTERPRETATION', 'target': 'IRI_mean_y', 'best_model': 'HistGradientBoostingRegressor', 'audit_run_id': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005', 'report_md_path': '/content/pavement_agentic_workspace/results_interpretation_report.md', 'report_json_path': '/content/pavement_agentic_workspace/results_interpretation_report.json', 'source_artifact_summary_path': '/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json', 'approved_test_metrics': {'RMSE': 19.74844532106776, 'MAE': 10.7493467479813, 'R2': 0.894348087748373}}})",
+        "kind": "results_interpretation"
+      }
+    ],
+    "pipeline_state": [
+      {
+        "text": "0.6749999523162842 | RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 PIPELINE_STATE_COMPLETED=RESULTS_INTERPRETATION; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; reports_saved=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "RESULTS_INTERPRETATION",
+          "target": "IRI_mean_y",
+          "best_model": "HistGradientBoostingRegressor",
+          "audit_run_id": "RESULTS_INTERPRETATION_AUDIT_4eb44ab91005",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json",
+            "/content/pavement_agentic_workspace/results_interpretation_report.md",
+            "/content/pavement_agentic_workspace/results_interpretation_report.json",
+            "/content/pavement_agentic_workspace/results_interpretation_reviewer_audit.json"
+          ],
+          "report_md_path": "/content/pavement_agentic_workspace/results_interpretation_report.md",
+          "report_json_path": "/content/pavement_agentic_workspace/results_interpretation_report.json"
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': '022f31ef72d1cc0a22a5ab32', 'ts': '2026-07-31 06:11:18', 'kind': 'pipeline_state', 'text': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 PIPELINE_STATE_COMPLETED=RESULTS_INTERPRETATION; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; reports_saved=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'RESULTS_INTERPRETATION', 'target': 'IRI_mean_y', 'best_model': 'HistGradientBoostingRegressor', 'audit_run_id': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005', 'artifacts_saved': ['/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json', '/content/pavement_agentic_workspace/results_interpretation_report.md', '/content/pavement_agentic_workspace/results_interpretation_report.json', '/content/pavement_agentic_workspace/results_interpretation_reviewer_audit.json'], 'report_md_path': '/content/pavement_agentic_workspace/results_interpretation_report.md', 'report_json_path': '/content/pavement_agentic_workspace/results_interpretation_report.json'}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.45397984981536865 | RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 RESULTS_INTERPRETATION final engineering report saved; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; RMSE=19.74844532106776; MAE=10.7493467479813; R2=0.894348087748373; reports=/content/pavement_agentic_workspace/results_interpretation_report.md,/content/pavement_agentic_workspace/results_interpretation_report.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "RESULTS_INTERPRETATION",
+          "target": "IRI_mean_y",
+          "best_model": "HistGradientBoostingRegressor",
+          "audit_run_id": "RESULTS_INTERPRETATION_AUDIT_4eb44ab91005",
+          "report_md_path": "/content/pavement_agentic_workspace/results_interpretation_report.md",
+          "report_json_path": "/content/pavement_agentic_workspace/results_interpretation_report.json",
+          "source_artifact_summary_path": "/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json",
+          "approved_test_metrics": {
+            "RMSE": 19.74844532106776,
+            "MAE": 10.7493467479813,
+            "R2": 0.894348087748373
+          }
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.45397984981536865, {'id': '47839dcab034461058f15db1', 'ts': '2026-07-31 06:11:18', 'kind': 'results_interpretation', 'text': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005 RESULTS_INTERPRETATION final engineering report saved; dataset_id=c1ba44638d60; target=IRI_mean_y; best_model=HistGradientBoostingRegressor; RMSE=19.74844532106776; MAE=10.7493467479813; R2=0.894348087748373; reports=/content/pavement_agentic_workspace/results_interpretation_report.md,/content/pavement_agentic_workspace/results_interpretation_report.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'RESULTS_INTERPRETATION', 'target': 'IRI_mean_y', 'best_model': 'HistGradientBoostingRegressor', 'audit_run_id': 'RESULTS_INTERPRETATION_AUDIT_4eb44ab91005', 'report_md_path': '/content/pavement_agentic_workspace/results_interpretation_report.md', 'report_json_path': '/content/pavement_agentic_workspace/results_interpretation_report.json', 'source_artifact_summary_path': '/content/pavement_agentic_workspace/results_interpretation_artifact_summary.json', 'approved_test_metrics': {'RMSE': 19.74844532106776, 'MAE': 10.7493467479813, 'R2': 0.894348087748373}}})",
+        "kind": "pipeline_state"
+      }
+    ]
+  },
+  "registry_checks": {
+    "dataset_path_source": "mm.validate_registry(WORK_DIR)",
+    "DATASET_ID": "c1ba44638d60",
+    "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+    "file_path_exists": true
+  },
+  "errors_or_missing_gates": []
+}

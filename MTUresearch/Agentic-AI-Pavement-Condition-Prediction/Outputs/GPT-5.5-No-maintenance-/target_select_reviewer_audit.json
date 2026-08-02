@@ -1,0 +1,296 @@
+{
+  "hard_gate_passed": true,
+  "AUDIT_RUN_ID": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+  "DATASET_ID": "c1ba44638d60",
+  "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "state": "TARGET_SELECT",
+  "selected_target": "IRI_mean_y",
+  "artifact_paths": {
+    "target_candidates.csv": "/content/pavement_agentic_workspace/target_candidates.csv",
+    "target_selection_decision.json": "/content/pavement_agentic_workspace/target_selection_decision.json",
+    "target_selection_decision.csv": "/content/pavement_agentic_workspace/target_selection_decision.csv",
+    "target_select_reviewer_audit.json": "/content/pavement_agentic_workspace/target_select_reviewer_audit.json"
+  },
+  "artifact_checks": {
+    "target_candidates.csv": true,
+    "target_selection_decision.json": true,
+    "target_selection_decision.csv": true,
+    "all_required_files_exist": true
+  },
+  "target_candidates_checks": {
+    "schema": [
+      "column",
+      "family",
+      "family_confidence",
+      "reasons",
+      "leakage_guard"
+    ],
+    "schema_exact_order": true,
+    "row_count": 4,
+    "non_empty": true,
+    "selected_target_appears": true,
+    "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv"
+  },
+  "selected_candidate_rows_from_target_candidates_csv": [
+    {
+      "column": "IRI_mean_y",
+      "family": "iri",
+      "family_confidence": "high",
+      "reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+    }
+  ],
+  "decision_artifact_checks": {
+    "json_required_fields_present": {
+      "final_target_column": true,
+      "target_family": true,
+      "family_confidence": true,
+      "selection_basis": true,
+      "leakage_guard": true,
+      "recommended_prediction_framing": true,
+      "target_candidates_source": true,
+      "dataset_id": true,
+      "file_path": true,
+      "state": true
+    },
+    "csv_required_fields_present": {
+      "final_target_column": true,
+      "target_family": true,
+      "family_confidence": true,
+      "selection_basis": true,
+      "leakage_guard": true,
+      "recommended_prediction_framing": true,
+      "target_candidates_source": true,
+      "dataset_id": true,
+      "file_path": true,
+      "state": true
+    },
+    "json_all_required_fields_present": true,
+    "csv_all_required_fields_present": true,
+    "json_final_target_column": "IRI_mean_y",
+    "csv_final_target_column": "IRI_mean_y",
+    "json_selected_target_exact": true,
+    "csv_selected_target_exact": true,
+    "json_dataset_id_matches_registry": true,
+    "csv_dataset_id_matches_registry": true,
+    "json_file_path_matches_registry": true,
+    "csv_file_path_matches_registry": true,
+    "json_state_is_TARGET_SELECT": true,
+    "csv_state_is_TARGET_SELECT": true,
+    "json_target_candidates_source_matches": true,
+    "csv_target_candidates_source_matches": true,
+    "json_content": {
+      "state": "TARGET_SELECT",
+      "dataset_id": "c1ba44638d60",
+      "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+      "created_at_utc": "2026-07-31T05:47:47.768543Z",
+      "final_target_column": "IRI_mean_y",
+      "target_family": "iri",
+      "family_confidence": "high",
+      "selection_basis": "Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "candidate_row_reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.",
+      "recommended_prediction_framing": "regression, subject to downstream numeric validation",
+      "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+      "selection_constraints_observed": {
+        "used_only_target_candidates_csv_for_target_choice": true,
+        "dataset_head_not_inspected": true,
+        "dataset_profile_not_inspected": true,
+        "dataset_file_not_loaded_for_target_choice": true
+      },
+      "target_candidates_schema": [
+        "column",
+        "family",
+        "family_confidence",
+        "reasons",
+        "leakage_guard"
+      ],
+      "target_candidates_schema_exact_order": true,
+      "target_candidates_row_count": 4
+    },
+    "csv_columns": [
+      "state",
+      "dataset_id",
+      "file_path",
+      "created_at_utc",
+      "final_target_column",
+      "target_family",
+      "family_confidence",
+      "selection_basis",
+      "candidate_row_reasons",
+      "leakage_guard",
+      "recommended_prediction_framing",
+      "target_candidates_source",
+      "selection_constraints_observed",
+      "target_candidates_schema",
+      "target_candidates_schema_exact_order",
+      "target_candidates_row_count"
+    ],
+    "csv_row_count": 1,
+    "csv_first_row": {
+      "state": "TARGET_SELECT",
+      "dataset_id": "c1ba44638d60",
+      "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+      "created_at_utc": "2026-07-31T05:47:47.768543Z",
+      "final_target_column": "IRI_mean_y",
+      "target_family": "iri",
+      "family_confidence": "high",
+      "selection_basis": "Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "candidate_row_reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+      "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.",
+      "recommended_prediction_framing": "regression, subject to downstream numeric validation",
+      "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+      "selection_constraints_observed": "{'used_only_target_candidates_csv_for_target_choice': True, 'dataset_head_not_inspected': True, 'dataset_profile_not_inspected': True, 'dataset_file_not_loaded_for_target_choice': True}",
+      "target_candidates_schema": "['column', 'family', 'family_confidence', 'reasons', 'leakage_guard']",
+      "target_candidates_schema_exact_order": "True",
+      "target_candidates_row_count": "4"
+    }
+  },
+  "mm_record_checks": {
+    "target_selection_decision_record_exists": true,
+    "pipeline_state_TARGET_SELECT_completed_record_exists": true,
+    "target_selection_decision_records_have_minimum_meta": true,
+    "pipeline_state_records_have_minimum_meta": true,
+    "target_selection_decision_mentions_selected_target": true,
+    "pipeline_state_mentions_TARGET_SELECT_completion": true,
+    "fresh_strict_audit_run_id": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+    "all_final_retrieved_TARGET_SELECT_records_have_minimum_meta": true
+  },
+  "mm_retrieval_after_logging": {
+    "target_selection_decision": [
+      {
+        "text": "0.6749999523162842 | TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 PIPELINE_STATE_COMPLETED=TARGET_SELECT; STRICT_META; dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; used_only_target_candidates_csv=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "TARGET_SELECT",
+          "audit_run_id": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/target_selection_decision.json",
+            "/content/pavement_agentic_workspace/target_selection_decision.csv",
+            "/content/pavement_agentic_workspace/target_select_reviewer_audit.json"
+          ],
+          "final_target_column": "IRI_mean_y",
+          "target_family": "iri",
+          "family_confidence": "high",
+          "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "decision_json_path": "/content/pavement_agentic_workspace/target_selection_decision.json",
+          "decision_csv_path": "/content/pavement_agentic_workspace/target_selection_decision.csv",
+          "used_only_target_candidates_csv_for_target_choice": true,
+          "dataset_profile_not_inspected_by_validation": true,
+          "dataset_head_not_inspected_by_validation": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': 'd1319a5a6895a3b6fd0de362', 'ts': '2026-07-31 05:51:44', 'kind': 'pipeline_state', 'text': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 PIPELINE_STATE_COMPLETED=TARGET_SELECT; STRICT_META; dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; used_only_target_candidates_csv=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'TARGET_SELECT', 'audit_run_id': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853', 'artifacts_saved': ['/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/target_selection_decision.json', '/content/pavement_agentic_workspace/target_selection_decision.csv', '/content/pavement_agentic_workspace/target_select_reviewer_audit.json'], 'final_target_column': 'IRI_mean_y', 'target_family': 'iri', 'family_confidence': 'high', 'target_candidates_source': '/content/pavement_agentic_workspace/target_candidates.csv', 'decision_json_path': '/content/pavement_agentic_workspace/target_selection_decision.json', 'decision_csv_path': '/content/pavement_agentic_workspace/target_selection_decision.csv', 'used_only_target_candidates_csv_for_target_choice': True, 'dataset_profile_not_inspected_by_validation': True, 'dataset_head_not_inspected_by_validation': True}})",
+        "kind": "target_selection_decision"
+      },
+      {
+        "text": "0.5834921002388 | TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 TARGET_SELECT STRICT_META completed for dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; family_confidence=high; source=/content/pavement_agentic_workspace/target_candidates.csv; used_only_target_candidates_csv=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "TARGET_SELECT",
+          "audit_run_id": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+          "final_target_column": "IRI_mean_y",
+          "target_family": "iri",
+          "family_confidence": "high",
+          "selection_basis": "Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+          "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.",
+          "recommended_prediction_framing": "regression, subject to downstream numeric validation",
+          "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "decision_json_path": "/content/pavement_agentic_workspace/target_selection_decision.json",
+          "decision_csv_path": "/content/pavement_agentic_workspace/target_selection_decision.csv",
+          "selected_target_appears_in_target_candidates_csv": true,
+          "used_only_target_candidates_csv_for_target_choice": true,
+          "dataset_profile_not_inspected_by_validation": true,
+          "dataset_head_not_inspected_by_validation": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5834921002388, {'id': 'a3fea8f175931174f6ae59ee', 'ts': '2026-07-31 05:51:44', 'kind': 'target_selection_decision', 'text': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 TARGET_SELECT STRICT_META completed for dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; family_confidence=high; source=/content/pavement_agentic_workspace/target_candidates.csv; used_only_target_candidates_csv=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'TARGET_SELECT', 'audit_run_id': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853', 'final_target_column': 'IRI_mean_y', 'target_family': 'iri', 'family_confidence': 'high', 'selection_basis': \"Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.\", 'leakage_guard': 'Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.', 'recommended_prediction_framing': 'regression, subject to downstream numeric validation', 'target_candidates_source': '/content/pavement_agentic_workspace/target_candidates.csv', 'decision_json_path': '/content/pavement_agentic_workspace/target_selection_decision.json', 'decision_csv_path': '/content/pavement_agentic_workspace/target_selection_decision.csv', 'selected_target_appears_in_target_candidates_csv': True, 'used_only_target_candidates_csv_for_target_choice': True, 'dataset_profile_not_inspected_by_validation': True, 'dataset_head_not_inspected_by_validation': True}})",
+        "kind": "target_selection_decision"
+      }
+    ],
+    "pipeline_state": [
+      {
+        "text": "0.6749999523162842 | TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 PIPELINE_STATE_COMPLETED=TARGET_SELECT; STRICT_META; dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; used_only_target_candidates_csv=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "TARGET_SELECT",
+          "audit_run_id": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/target_selection_decision.json",
+            "/content/pavement_agentic_workspace/target_selection_decision.csv",
+            "/content/pavement_agentic_workspace/target_select_reviewer_audit.json"
+          ],
+          "final_target_column": "IRI_mean_y",
+          "target_family": "iri",
+          "family_confidence": "high",
+          "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "decision_json_path": "/content/pavement_agentic_workspace/target_selection_decision.json",
+          "decision_csv_path": "/content/pavement_agentic_workspace/target_selection_decision.csv",
+          "used_only_target_candidates_csv_for_target_choice": true,
+          "dataset_profile_not_inspected_by_validation": true,
+          "dataset_head_not_inspected_by_validation": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.6749999523162842, {'id': 'd1319a5a6895a3b6fd0de362', 'ts': '2026-07-31 05:51:44', 'kind': 'pipeline_state', 'text': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 PIPELINE_STATE_COMPLETED=TARGET_SELECT; STRICT_META; dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; used_only_target_candidates_csv=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'TARGET_SELECT', 'audit_run_id': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853', 'artifacts_saved': ['/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/target_selection_decision.json', '/content/pavement_agentic_workspace/target_selection_decision.csv', '/content/pavement_agentic_workspace/target_select_reviewer_audit.json'], 'final_target_column': 'IRI_mean_y', 'target_family': 'iri', 'family_confidence': 'high', 'target_candidates_source': '/content/pavement_agentic_workspace/target_candidates.csv', 'decision_json_path': '/content/pavement_agentic_workspace/target_selection_decision.json', 'decision_csv_path': '/content/pavement_agentic_workspace/target_selection_decision.csv', 'used_only_target_candidates_csv_for_target_choice': True, 'dataset_profile_not_inspected_by_validation': True, 'dataset_head_not_inspected_by_validation': True}})",
+        "kind": "pipeline_state"
+      },
+      {
+        "text": "0.5188690423965454 | TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 TARGET_SELECT STRICT_META completed for dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; family_confidence=high; source=/content/pavement_agentic_workspace/target_candidates.csv; used_only_target_candidates_csv=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "TARGET_SELECT",
+          "audit_run_id": "TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853",
+          "final_target_column": "IRI_mean_y",
+          "target_family": "iri",
+          "family_confidence": "high",
+          "selection_basis": "Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+          "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.",
+          "recommended_prediction_framing": "regression, subject to downstream numeric validation",
+          "target_candidates_source": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "decision_json_path": "/content/pavement_agentic_workspace/target_selection_decision.json",
+          "decision_csv_path": "/content/pavement_agentic_workspace/target_selection_decision.csv",
+          "selected_target_appears_in_target_candidates_csv": true,
+          "used_only_target_candidates_csv_for_target_choice": true,
+          "dataset_profile_not_inspected_by_validation": true,
+          "dataset_head_not_inspected_by_validation": true
+        },
+        "raw_type": "tuple",
+        "raw_repr": "(0.5188690423965454, {'id': 'a3fea8f175931174f6ae59ee', 'ts': '2026-07-31 05:51:44', 'kind': 'target_selection_decision', 'text': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853 TARGET_SELECT STRICT_META completed for dataset_id=c1ba44638d60; final_target_column=IRI_mean_y; target_family=iri; family_confidence=high; source=/content/pavement_agentic_workspace/target_candidates.csv; used_only_target_candidates_csv=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'TARGET_SELECT', 'audit_run_id': 'TARGET_SELECT_REVIEWER_VALIDATION_06ec3c267853', 'final_target_column': 'IRI_mean_y', 'target_family': 'iri', 'family_confidence': 'high', 'selection_basis': \"Selected strictly from target_candidates.csv. IRI_mean_y is listed as a high-confidence iri candidate with reason: Matched IRI/Roughness via token 'iri' or substring 'roughness'.\", 'leakage_guard': 'Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable.', 'recommended_prediction_framing': 'regression, subject to downstream numeric validation', 'target_candidates_source': '/content/pavement_agentic_workspace/target_candidates.csv', 'decision_json_path': '/content/pavement_agentic_workspace/target_selection_decision.json', 'decision_csv_path': '/content/pavement_agentic_workspace/target_selection_decision.csv', 'selected_target_appears_in_target_candidates_csv': True, 'used_only_target_candidates_csv_for_target_choice': True, 'dataset_profile_not_inspected_by_validation': True, 'dataset_head_not_inspected_by_validation': True}})",
+        "kind": "pipeline_state"
+      }
+    ]
+  },
+  "registry_checks": {
+    "dataset_path_source": "mm.validate_registry(WORK_DIR)",
+    "DATASET_ID": "c1ba44638d60",
+    "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+    "file_path_exists": true,
+    "file_path_not_inside_WORK_DIR": true
+  },
+  "selection_provenance_checks": {
+    "selected_target": "IRI_mean_y",
+    "selected_target_in_target_candidates_csv": true,
+    "decision_json_target_matches_candidate_file": true,
+    "decision_csv_target_matches_candidate_file": true,
+    "decision_source_is_target_candidates_csv_json": true,
+    "decision_source_is_target_candidates_csv_csv": true,
+    "selected_candidate_rows_from_target_candidates_csv_only": [
+      {
+        "column": "IRI_mean_y",
+        "family": "iri",
+        "family_confidence": "high",
+        "reasons": "Matched IRI/Roughness via token 'iri' or substring 'roughness'.",
+        "leakage_guard": "Potential condition metric. Downstream agents must prevent leakage by excluding any post-period / outcome / future condition columns from features if applicable."
+      }
+    ],
+    "dataset_profile_not_inspected_by_this_validation": true,
+    "dataset_head_not_inspected_by_this_validation": true
+  },
+  "errors_or_missing_gates": []
+}

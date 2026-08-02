@@ -1,0 +1,1231 @@
+{
+  "hard_gate_passed": true,
+  "AUDIT_RUN_ID": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+  "DATASET_ID": "c1ba44638d60",
+  "FILE_PATH": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+  "WORK_DIR": "/content/pavement_agentic_workspace",
+  "created_at_utc": "2026-07-31T05:44:53.368420Z",
+  "dataset_shape": {
+    "rows": 6444,
+    "columns": 22
+  },
+  "artifact_paths": {
+    "dataset_profile.json": "/content/pavement_agentic_workspace/dataset_profile.json",
+    "dataset_head.csv": "/content/pavement_agentic_workspace/dataset_head.csv",
+    "target_candidates.csv": "/content/pavement_agentic_workspace/target_candidates.csv",
+    "diagnostic_plot_png": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+    "reviewer_audit_json": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+  },
+  "normalized_column_list_as_List_str": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "IRI_mean_y",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "registry_audit": {
+    "validate_registry": {
+      "created_ts": "2026-07-31 05:37:16",
+      "path_to_dataset_id": {
+        "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv": "c1ba44638d60"
+      },
+      "latest_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+      "latest_dataset_id": "c1ba44638d60",
+      "pinned": true
+    },
+    "rag_get_latest_registry": {
+      "created_ts": "2026-07-31 05:37:16",
+      "path_to_dataset_id": {
+        "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv": "c1ba44638d60"
+      },
+      "latest_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+      "latest_dataset_id": "c1ba44638d60",
+      "pinned": true
+    },
+    "file_path_exists": true,
+    "file_path_not_inside_WORK_DIR": true,
+    "matches_pinned_expected": true,
+    "matches_PINNED_FILE_PATH_env": true
+  },
+  "artifact_checks": {
+    "dataset_profile.json": true,
+    "dataset_head.csv": true,
+    "target_candidates.csv": true,
+    "target_candidates_non_empty": true,
+    "target_candidates_schema_exact_order": true,
+    "diagnostic_plot_png": true,
+    "at_least_one_png_under_plots_dir": true,
+    "pngs_under_plots_dir": [
+      "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+      "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png"
+    ],
+    "reviewer_audit_json": true
+  },
+  "target_candidates_checks": {
+    "non_empty": true,
+    "schema_exact_order": true,
+    "schema": [
+      "column",
+      "family",
+      "family_confidence",
+      "reasons",
+      "leakage_guard"
+    ],
+    "required_schema": [
+      "column",
+      "family",
+      "family_confidence",
+      "reasons",
+      "leakage_guard"
+    ],
+    "row_count": 4,
+    "generated_using_only": "mm.discover_condition_candidates(columns)",
+    "candidate_generation_used_only_allowed_function": true
+  },
+  "mm_record_checks": {
+    "pipeline_state_completed_record": true,
+    "dataset_artifact_record": true,
+    "target_candidates_record": true,
+    "pipeline_state_records_have_minimum_meta": true,
+    "dataset_artifact_records_have_minimum_meta": true,
+    "target_candidates_records_have_minimum_meta": true,
+    "all_records_have_minimum_meta": true
+  },
+  "mm_retrieval_after_logging": {
+    "pipeline_state": [
+      {
+        "text": "0.5888223648071289 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "reviewer_audit_json": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.5888223648071289, {'id': '6acbba14fffafe05b11e18e1', 'ts': '2026-07-31 05:44:53', 'kind': 'pipeline_state', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'reviewer_audit_json': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.527072548866272 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.527072548866272, {'id': '82f190265b984e0eff770fb4', 'ts': '2026-07-31 05:44:53', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      },
+      {
+        "text": "0.5234313607215881 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.5234313607215881, {'id': 'b3280f4079906d969ba9513b', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.5017766952514648 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.5017766952514648, {'id': '059dc042bbf7490f017b94b7', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      }
+    ],
+    "dataset_artifact": [
+      {
+        "text": "0.6749999523162842 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.6749999523162842, {'id': 'b3280f4079906d969ba9513b', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.6042033433914185 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "reviewer_audit_json": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.6042033433914185, {'id': '6acbba14fffafe05b11e18e1', 'ts': '2026-07-31 05:44:53', 'kind': 'pipeline_state', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'reviewer_audit_json': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.5869159698486328 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.5869159698486328, {'id': '059dc042bbf7490f017b94b7', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.4853901267051697 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.4853901267051697, {'id': '82f190265b984e0eff770fb4', 'ts': '2026-07-31 05:44:53', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      }
+    ],
+    "target_candidates": [
+      {
+        "text": "0.6749999523162842 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.6749999523162842, {'id': '82f190265b984e0eff770fb4', 'ts': '2026-07-31 05:44:53', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META target candidates. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      },
+      {
+        "text": "0.617450475692749 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "reviewer_audit_json": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.617450475692749, {'id': '6acbba14fffafe05b11e18e1', 'ts': '2026-07-31 05:44:53', 'kind': 'pipeline_state', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified STRICT_META; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'reviewer_audit_json': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.5999545454978943 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5999545454978943, {'id': 'b3280f4079906d969ba9513b', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META reviewer audit JSON artifact saved: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.5699489712715149 | DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "audit_run_id": "DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5699489712715149, {'id': '059dc042bbf7490f017b94b7', 'ts': '2026-07-31 05:44:53', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7 DISCOVER_DATASET STRICT_META dataset artifacts. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'audit_run_id': 'DISCOVER_DATASET_REVIEWER_VALIDATION_1e6219ca9fc7', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated by corrected DISCOVER_DATASET reviewer validation script from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); plot shows missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      }
+    ]
+  },
+  "prior_mm_retrieval_before_corrected_logging": {
+    "state_previously_completed": true,
+    "pipeline_state": [
+      {
+        "text": "0.6749999523162842 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/final_code.py"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.6749999523162842, {'id': 'dc570c31f5511b0806d2780d', 'ts': '2026-07-31 05:37:21', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/discovery_diagnostic.png', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/final_code.py']}})"
+      },
+      {
+        "text": "0.5724873542785645 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.5724873542785645, {'id': '6a6f7d2c0282df5900bc495f', 'ts': '2026-07-31 05:39:03', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png']}})"
+      },
+      {
+        "text": "0.4416666626930237 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.4416666626930237, {'id': '4dee4b4379d0a0a0f4067861', 'ts': '2026-07-31 05:41:41', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.41390007734298706 | DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.41390007734298706, {'id': '18640c6f5883ace978c8e4b6', 'ts': '2026-07-31 05:41:40', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      },
+      {
+        "text": "0.3964434266090393 | DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.3964434266090393, {'id': '4b22f4718feeb8f05b3824b5', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.39499998092651367 | DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.39499998092651367, {'id': 'b8244b8deead2e23be8362b3', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.32499998807907104 | Saved condition candidates: /content/pavement_agentic_workspace/target_candidates.csv (families={'iri': 2, 'cracking_percent': 1, 'rutting': 1})",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "csv_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "n": 4,
+          "family_counts": {
+            "iri": 2,
+            "cracking_percent": 1,
+            "rutting": 1
+          }
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.32499998807907104, {'id': 'b7715dc5f75a07b3aa34331a', 'ts': '2026-07-31 05:37:21', 'kind': 'target_candidates', 'text': \"Saved condition candidates: /content/pavement_agentic_workspace/target_candidates.csv (families={'iri': 2, 'cracking_percent': 1, 'rutting': 1})\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'csv_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'n': 4, 'family_counts': {'iri': 2, 'cracking_percent': 1, 'rutting': 1}}})"
+      },
+      {
+        "text": "0.32499998807907104 | Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "REGISTRY_PINNED",
+          "pinned": true,
+          "note": "Pinned from Drive"
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.32499998807907104, {'id': 'e4cbff71be99a1c0bbe22def', 'ts': '2026-07-31 05:37:16', 'kind': 'pinned_dataset', 'text': 'Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'REGISTRY_PINNED', 'pinned': True, 'note': 'Pinned from Drive'}})"
+      },
+      {
+        "text": "0.32499998807907104 | Loaded dataset (see meta for path, shape, columns)",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "shape": [
+            6444,
+            22
+          ],
+          "ncols": 22,
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "normalized_columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.32499998807907104, {'id': '4ef84166c0ab58f31b18e7b5', 'ts': '2026-07-31 05:39:03', 'kind': 'dataset_artifact', 'text': 'Loaded dataset (see meta for path, shape, columns)', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'shape': [6444, 22], 'ncols': 22, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'normalized_columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png']}})"
+      },
+      {
+        "text": "0.32499998807907104 | Saved target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "candidate_count": 4
+        },
+        "raw_type": "tuple",
+        "kind": "pipeline_state",
+        "raw_repr": "(0.32499998807907104, {'id': '57691812cddac4911cc46ac0', 'ts': '2026-07-31 05:39:03', 'kind': 'target_candidates', 'text': 'Saved target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'candidate_count': 4}})"
+      }
+    ],
+    "dataset_artifact": [
+      {
+        "text": "0.6749999523162842 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.6749999523162842, {'id': '6a6f7d2c0282df5900bc495f', 'ts': '2026-07-31 05:39:03', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png']}})"
+      },
+      {
+        "text": "0.5724873542785645 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/final_code.py"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.5724873542785645, {'id': 'dc570c31f5511b0806d2780d', 'ts': '2026-07-31 05:37:21', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/discovery_diagnostic.png', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/final_code.py']}})"
+      },
+      {
+        "text": "0.5724873542785645 | DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.5724873542785645, {'id': 'b8244b8deead2e23be8362b3', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.5270726084709167 | DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.5270726084709167, {'id': '4b22f4718feeb8f05b3824b5', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.48999157547950745 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.48999157547950745, {'id': '4dee4b4379d0a0a0f4067861', 'ts': '2026-07-31 05:41:41', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.45072370767593384 | DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.45072370767593384, {'id': '18640c6f5883ace978c8e4b6', 'ts': '2026-07-31 05:41:40', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      },
+      {
+        "text": "0.4305289685726166 | Saved dataset artifacts: /content/pavement_agentic_workspace/dataset_profile.json, /content/pavement_agentic_workspace/dataset_head.csv, /content/pavement_agentic_workspace/plots/discovery_diagnostic.png, /content/pavement_agentic_workspace/final_code.py",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "shape": [
+            6444,
+            22
+          ],
+          "dataset_profile": "/content/pavement_agentic_workspace/dataset_profile.json",
+          "dataset_head": "/content/pavement_agentic_workspace/dataset_head.csv",
+          "plot": "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png",
+          "final_code": "/content/pavement_agentic_workspace/final_code.py"
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.4305289685726166, {'id': '22b2e2ffe7ad5ca86c13b40f', 'ts': '2026-07-31 05:37:21', 'kind': 'dataset_artifact', 'text': 'Saved dataset artifacts: /content/pavement_agentic_workspace/dataset_profile.json, /content/pavement_agentic_workspace/dataset_head.csv, /content/pavement_agentic_workspace/plots/discovery_diagnostic.png, /content/pavement_agentic_workspace/final_code.py', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'shape': [6444, 22], 'dataset_profile': '/content/pavement_agentic_workspace/dataset_profile.json', 'dataset_head': '/content/pavement_agentic_workspace/dataset_head.csv', 'plot': '/content/pavement_agentic_workspace/plots/discovery_diagnostic.png', 'final_code': '/content/pavement_agentic_workspace/final_code.py'}})"
+      },
+      {
+        "text": "0.38786184787750244 | Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "REGISTRY_PINNED",
+          "pinned": true,
+          "note": "Pinned from Drive"
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.38786184787750244, {'id': 'e4cbff71be99a1c0bbe22def', 'ts': '2026-07-31 05:37:16', 'kind': 'pinned_dataset', 'text': 'Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'REGISTRY_PINNED', 'pinned': True, 'note': 'Pinned from Drive'}})"
+      },
+      {
+        "text": "0.32499998807907104 | Loaded dataset (see meta for path, shape, columns)",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "shape": [
+            6444,
+            22
+          ],
+          "ncols": 22,
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "normalized_columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.32499998807907104, {'id': '4ef84166c0ab58f31b18e7b5', 'ts': '2026-07-31 05:39:03', 'kind': 'dataset_artifact', 'text': 'Loaded dataset (see meta for path, shape, columns)', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'shape': [6444, 22], 'ncols': 22, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'normalized_columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png']}})"
+      },
+      {
+        "text": "0.32499998807907104 | Saved target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "candidate_count": 4
+        },
+        "raw_type": "tuple",
+        "kind": "dataset_artifact",
+        "raw_repr": "(0.32499998807907104, {'id': '57691812cddac4911cc46ac0', 'ts': '2026-07-31 05:39:03', 'kind': 'target_candidates', 'text': 'Saved target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'candidate_count': 4}})"
+      }
+    ],
+    "target_candidates": [
+      {
+        "text": "0.6749999523162842 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.6749999523162842, {'id': '6a6f7d2c0282df5900bc495f', 'ts': '2026-07-31 05:39:03', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; dataset_id=c1ba44638d60', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png']}})"
+      },
+      {
+        "text": "0.5764473676681519 | DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "schema_order_exact": true,
+          "candidate_count": 4,
+          "candidate_generation_rule": "mm.discover_condition_candidates(columns)",
+          "candidate_generation_used_only_allowed_function": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5764473676681519, {'id': '18640c6f5883ace978c8e4b6', 'ts': '2026-07-31 05:41:40', 'kind': 'target_candidates', 'text': 'DISCOVER_DATASET reviewer-verified target_candidates.csv for dataset_id=c1ba44638d60. Generated using only mm.discover_condition_candidates(columns); schema=column,family,family_confidence,reasons,leakage_guard; rows=4; artifact=/content/pavement_agentic_workspace/target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'schema_order_exact': True, 'candidate_count': 4, 'candidate_generation_rule': 'mm.discover_condition_candidates(columns)', 'candidate_generation_used_only_allowed_function': True}})"
+      },
+      {
+        "text": "0.5724873542785645 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/final_code.py"
+          ]
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5724873542785645, {'id': 'dc570c31f5511b0806d2780d', 'ts': '2026-07-31 05:37:21', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/discovery_diagnostic.png', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/final_code.py']}})"
+      },
+      {
+        "text": "0.5270726084709167 | Saved target_candidates.csv",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "candidate_count": 4
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5270726084709167, {'id': '57691812cddac4911cc46ac0', 'ts': '2026-07-31 05:39:03', 'kind': 'target_candidates', 'text': 'Saved target_candidates.csv', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'candidate_count': 4}})"
+      },
+      {
+        "text": "0.5270726084709167 | DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifact_path": "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json",
+          "artifact_type": "reviewer_audit_json"
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.5270726084709167, {'id': '4b22f4718feeb8f05b3824b5', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': 'DISCOVER_DATASET reviewer audit artifact saved for dataset_id=c1ba44638d60: /content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifact_path': '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json', 'artifact_type': 'reviewer_audit_json'}})"
+      },
+      {
+        "text": "0.48999157547950745 | PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/target_candidates.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+            "/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json"
+          ],
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "target_candidates_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "target_candidates_schema": [
+            "column",
+            "family",
+            "family_confidence",
+            "reasons",
+            "leakage_guard"
+          ],
+          "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.48999157547950745, {'id': '4dee4b4379d0a0a0f4067861', 'ts': '2026-07-31 05:41:41', 'kind': 'pipeline_state', 'text': 'PIPELINE_STATE_COMPLETED=DISCOVER_DATASET; reviewer-verified; dataset_id=c1ba44638d60; target_candidates_generated_using_only=mm.discover_condition_candidates(columns); diagnostic_plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; no_synthetic_dummy_random_placeholder_dataframe_used=true', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/target_candidates.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', '/content/pavement_agentic_workspace/discover_dataset_reviewer_audit.json'], 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'target_candidates_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'target_candidates_schema': ['column', 'family', 'family_confidence', 'reasons', 'leakage_guard'], 'target_candidates_generated_using_only': 'mm.discover_condition_candidates(columns)', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.47349244356155396 | DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "artifacts_saved": [
+            "/content/pavement_agentic_workspace/dataset_profile.json",
+            "/content/pavement_agentic_workspace/dataset_head.csv",
+            "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png"
+          ],
+          "shape": {
+            "rows": 6444,
+            "columns": 22
+          },
+          "columns": [
+            "AADT_mean_x",
+            "AADT_Single_Unit_mean_x",
+            "AADT_Combination_mean_x",
+            "Future_AADT_mean_x",
+            "IRI_mean_x",
+            "Thickness_Rigid_mean_x",
+            "Thickness_Flexible_mean_x",
+            "Base_Thickness_mean_x",
+            "F_System_mode",
+            "Urban_Type",
+            "Surface_Type_mode",
+            "Base_Type_mode_x",
+            "Rutting_mean_x",
+            "Cracking_Percent_mean_x",
+            "Faulting_mean_x",
+            "Last_Overlay_Thickness_mean_x",
+            "IRI_mean_y",
+            "RHU_AV_x",
+            "FRZ_IDX_x",
+            "TEMP_AVG_x",
+            "PRECIPITATION_x",
+            "Age_x"
+          ],
+          "columns_type": "List[str]",
+          "diagnostic_plot_path": "/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png",
+          "diagnostic_plot_provenance": "Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.",
+          "no_synthetic_dummy_random_placeholder_dataframe_used": true
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.47349244356155396, {'id': 'b8244b8deead2e23be8362b3', 'ts': '2026-07-31 05:41:40', 'kind': 'dataset_artifact', 'text': \"DISCOVER_DATASET reviewer-verified dataset artifacts for dataset_id=c1ba44638d60. profile=/content/pavement_agentic_workspace/dataset_profile.json; head=/content/pavement_agentic_workspace/dataset_head.csv; plot=/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png; shape={'rows': 6444, 'columns': 22}; columns_available_as_List[str]=true; no_synthetic_dummy_random_placeholder_dataframe_used=true\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'artifacts_saved': ['/content/pavement_agentic_workspace/dataset_profile.json', '/content/pavement_agentic_workspace/dataset_head.csv', '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png'], 'shape': {'rows': 6444, 'columns': 22}, 'columns': ['AADT_mean_x', 'AADT_Single_Unit_mean_x', 'AADT_Combination_mean_x', 'Future_AADT_mean_x', 'IRI_mean_x', 'Thickness_Rigid_mean_x', 'Thickness_Flexible_mean_x', 'Base_Thickness_mean_x', 'F_System_mode', 'Urban_Type', 'Surface_Type_mode', 'Base_Type_mode_x', 'Rutting_mean_x', 'Cracking_Percent_mean_x', 'Faulting_mean_x', 'Last_Overlay_Thickness_mean_x', 'IRI_mean_y', 'RHU_AV_x', 'FRZ_IDX_x', 'TEMP_AVG_x', 'PRECIPITATION_x', 'Age_x'], 'columns_type': 'List[str]', 'diagnostic_plot_path': '/content/pavement_agentic_workspace/plots/dataset_missingness_diagnostic.png', 'diagnostic_plot_provenance': 'Generated from dataframe loaded directly from FILE_PATH returned by mm.validate_registry(WORK_DIR); missingness percentage by column.', 'no_synthetic_dummy_random_placeholder_dataframe_used': True}})"
+      },
+      {
+        "text": "0.4124999940395355 | Saved condition candidates: /content/pavement_agentic_workspace/target_candidates.csv (families={'iri': 2, 'cracking_percent': 1, 'rutting': 1})",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "csv_path": "/content/pavement_agentic_workspace/target_candidates.csv",
+          "n": 4,
+          "family_counts": {
+            "iri": 2,
+            "cracking_percent": 1,
+            "rutting": 1
+          }
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.4124999940395355, {'id': 'b7715dc5f75a07b3aa34331a', 'ts': '2026-07-31 05:37:21', 'kind': 'target_candidates', 'text': \"Saved condition candidates: /content/pavement_agentic_workspace/target_candidates.csv (families={'iri': 2, 'cracking_percent': 1, 'rutting': 1})\", 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'csv_path': '/content/pavement_agentic_workspace/target_candidates.csv', 'n': 4, 'family_counts': {'iri': 2, 'cracking_percent': 1, 'rutting': 1}}})"
+      },
+      {
+        "text": "0.38786184787750244 | Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "REGISTRY_PINNED",
+          "pinned": true,
+          "note": "Pinned from Drive"
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.38786184787750244, {'id': 'e4cbff71be99a1c0bbe22def', 'ts': '2026-07-31 05:37:16', 'kind': 'pinned_dataset', 'text': 'Registry pinned to /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv (dataset_id=c1ba44638d60)', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'REGISTRY_PINNED', 'pinned': True, 'note': 'Pinned from Drive'}})"
+      },
+      {
+        "text": "0.32499998807907104 | Saved dataset artifacts: /content/pavement_agentic_workspace/dataset_profile.json, /content/pavement_agentic_workspace/dataset_head.csv, /content/pavement_agentic_workspace/plots/discovery_diagnostic.png, /content/pavement_agentic_workspace/final_code.py",
+        "meta": {
+          "dataset_id": "c1ba44638d60",
+          "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv",
+          "state": "DISCOVER_DATASET",
+          "shape": [
+            6444,
+            22
+          ],
+          "dataset_profile": "/content/pavement_agentic_workspace/dataset_profile.json",
+          "dataset_head": "/content/pavement_agentic_workspace/dataset_head.csv",
+          "plot": "/content/pavement_agentic_workspace/plots/discovery_diagnostic.png",
+          "final_code": "/content/pavement_agentic_workspace/final_code.py"
+        },
+        "raw_type": "tuple",
+        "kind": "target_candidates",
+        "raw_repr": "(0.32499998807907104, {'id': '22b2e2ffe7ad5ca86c13b40f', 'ts': '2026-07-31 05:37:21', 'kind': 'dataset_artifact', 'text': 'Saved dataset artifacts: /content/pavement_agentic_workspace/dataset_profile.json, /content/pavement_agentic_workspace/dataset_head.csv, /content/pavement_agentic_workspace/plots/discovery_diagnostic.png, /content/pavement_agentic_workspace/final_code.py', 'meta': {'dataset_id': 'c1ba44638d60', 'file_path': '/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv', 'state': 'DISCOVER_DATASET', 'shape': [6444, 22], 'dataset_profile': '/content/pavement_agentic_workspace/dataset_profile.json', 'dataset_head': '/content/pavement_agentic_workspace/dataset_head.csv', 'plot': '/content/pavement_agentic_workspace/plots/discovery_diagnostic.png', 'final_code': '/content/pavement_agentic_workspace/final_code.py'}})"
+      }
+    ]
+  },
+  "confirmations": {
+    "authoritative_dataset_path_source": "mm.validate_registry(WORK_DIR)",
+    "target_candidates_generated_using_only": "mm.discover_condition_candidates(columns)",
+    "no_synthetic_dummy_random_placeholder_dataframe_used": true,
+    "dataset_dataframe_loaded_directly_from_FILE_PATH": true,
+    "all_artifacts_inside_WORK_DIR": true,
+    "diagnostic_plot_provenance_in_latest_pipeline_state_record": true
+  },
+  "errors_or_missing_gates": []
+}
