@@ -1,0 +1,18 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "TRAIN_TEST_SPLIT_PREPROCESS",
+  "target": "IRI_mean_y",
+  "limitations": [
+    "No segment, route, corridor, district, project, or year identifier was available in the approved feature policy/modeling table for grouped splitting.",
+    "Random holdout may place spatially or operationally similar pavement sections in both train and test sets.",
+    "Prior EDA reported exact duplicate rows; duplicate-related train/test contamination risk is documented but not resolved in this state.",
+    "_x variables are assumed baseline/prior to _y outcome; this remains a documented temporal assumption.",
+    "Treatment_type and Future_AADT_mean_x remain excluded to reduce intervention and future-information leakage risk."
+  ],
+  "recommended_future_review": [
+    "If route/segment/year identifiers become available, consider grouped or temporal validation.",
+    "Review exact duplicates before final model interpretation.",
+    "Confirm temporal provenance of IRI_mean_x relative to IRI_mean_y."
+  ]
+}
