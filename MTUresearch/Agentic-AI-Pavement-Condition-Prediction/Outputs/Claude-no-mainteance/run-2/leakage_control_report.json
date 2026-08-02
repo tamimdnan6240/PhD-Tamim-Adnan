@@ -1,0 +1,26 @@
+{
+  "target_variable": "IRI_mean_y",
+  "leakage_risk_features": [],
+  "safe_features": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ]
+}

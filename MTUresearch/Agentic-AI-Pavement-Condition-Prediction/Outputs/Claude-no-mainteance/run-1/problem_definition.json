@@ -1,0 +1,45 @@
+{
+  "problem_statement": "Predict pavement roughness (IRI) 2 years ahead using baseline condition and static features",
+  "business_objective": "Enable proactive maintenance planning and budget forecasting for pavement management systems",
+  "technical_objective": "Develop regression model with RMSE < 0.5 m/km and R\u00b2 > 0.70",
+  "dataset_characteristics": {
+    "sample_size": 6444,
+    "feature_count": 22,
+    "target_variable": "IRI_mean_y",
+    "baseline_variable": "IRI_mean_x",
+    "temporal_coverage": "2017-2019 (3 years)",
+    "data_quality": "Excellent - minimal missing in target variables"
+  },
+  "modeling_approach": {
+    "model_types": [
+      "Gradient Boosting",
+      "Random Forest",
+      "Ridge Regression"
+    ],
+    "feature_engineering": [
+      "Baseline conditions",
+      "Deterioration rates",
+      "Interaction terms"
+    ],
+    "validation_strategy": "5-fold cross-validation + holdout test set",
+    "hyperparameter_tuning": "Grid search with cross-validation"
+  },
+  "success_criteria": {
+    "technical": {
+      "RMSE": "< 0.5 m/km",
+      "R2": "> 0.70",
+      "baseline_improvement": "> 20%"
+    },
+    "business": {
+      "deployment_readiness": "Model exportable to PMS software",
+      "interpretability": "Feature importance analysis required",
+      "uncertainty_quantification": "Prediction intervals provided"
+    }
+  },
+  "constraints": {
+    "no_data_leakage": "Strict temporal ordering enforced",
+    "no_synthetic_data": "Registry-sourced data only",
+    "explainability": "Model must be interpretable for engineering review"
+  },
+  "dataset_id": "c1ba44638d60"
+}

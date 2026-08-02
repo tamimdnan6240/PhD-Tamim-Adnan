@@ -1,0 +1,22 @@
+{
+  "dataset_id": "c1ba44638d60",
+  "target_variable": "IRI_mean_y",
+  "target_stats": {
+    "count": 6444,
+    "mean": 111.77037554314091,
+    "std": 59.191053194855265,
+    "min": 33.0,
+    "max": 396.0
+  },
+  "shape_original": [
+    6444,
+    22
+  ],
+  "shape_engineered": [
+    6444,
+    31
+  ],
+  "n_features_created": 9,
+  "n_numeric_features": 21,
+  "n_categorical_features": 1
+}

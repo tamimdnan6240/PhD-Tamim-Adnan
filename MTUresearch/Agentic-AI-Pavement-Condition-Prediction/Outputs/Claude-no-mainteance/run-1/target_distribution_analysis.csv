@@ -1,0 +1,6 @@
+variable,count,missing,missing_pct,mean,median,std,min,max,q25,q75,skewness,kurtosis,analysis_type,mean_change,median_change,std_change,pct_deteriorated,pct_improved,pct_unchanged,percentage,mean_value,excellent,good,fair,poor,very_poor
+IRI_mean_y,6444.0,0.0,0.0,111.77037554314091,95.5,59.191053194855265,33.0,396.0,68.0,138.0,1.4066169151104935,2.1568620319295695,target,,,,,,,,,,,,,
+IRI_mean_x,6444.0,,,98.12698634388578,85.0,50.02564383069843,30.0,367.0,,,,,baseline,,,,,,,,,,,,,
+deterioration,,,,,,,,,,,,,change,13.643389199255122,7.0,19.99172104132087,100.0,0.0,0.0,,,,,,,
+outliers,6444.0,,,,,,,,,,,,outliers,,,,,,,100.0,111.77037554314091,,,,,
+condition_distribution,,,,,,,,,,,,,classification,,,,,,,,,0.0,0.0,0.0,0.0,6444.0

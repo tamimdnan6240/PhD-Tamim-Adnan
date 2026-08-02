@@ -1,0 +1,52 @@
+{
+  "dataset_id": "c1ba44638d60",
+  "target_variable": "IRI_mean_y",
+  "n_features": 31,
+  "n_train_samples": 5155,
+  "n_test_samples": 1289,
+  "models_trained": [
+    "RandomForest",
+    "GradientBoosting",
+    "Ridge",
+    "Lasso"
+  ],
+  "best_model": "Lasso",
+  "best_metrics": {
+    "model": "Lasso",
+    "rmse": 18.06309198381788,
+    "mae": 10.641750512064624,
+    "r2": 0.9113829092107811,
+    "mape": 8.999923027597326
+  },
+  "all_metrics": [
+    {
+      "model": "Lasso",
+      "rmse": 18.06309198381788,
+      "mae": 10.641750512064624,
+      "r2": 0.9113829092107811,
+      "mape": 8.999923027597326
+    },
+    {
+      "model": "Ridge",
+      "rmse": 18.0971282451051,
+      "mae": 10.696345319375778,
+      "r2": 0.9110486324252771,
+      "mape": 9.024542985723556
+    },
+    {
+      "model": "GradientBoosting",
+      "rmse": 18.88317733076787,
+      "mae": 10.832647874855276,
+      "r2": 0.9031536082571027,
+      "mape": 9.249452068942581
+    },
+    {
+      "model": "RandomForest",
+      "rmse": 19.61915988932386,
+      "mae": 11.724857556244523,
+      "r2": 0.8954572031812642,
+      "mape": 10.015058106210756
+    }
+  ],
+  "timestamp": "2026-07-28T20:53:06.985750"
+}

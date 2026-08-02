@@ -1,0 +1,68 @@
+{
+  "primary_target": {
+    "column_name": "IRI_mean_y",
+    "target_type": "continuous",
+    "problem_type": "regression",
+    "prediction_horizon_years": 2,
+    "baseline_year": 2017,
+    "units": "m/km",
+    "description": "International Roughness Index - ride quality metric",
+    "condition_thresholds": {
+      "excellent": 1.5,
+      "good": 2.7,
+      "fair": 4.3,
+      "poor": 5.5,
+      "very_poor": 6.0
+    },
+    "outlier_threshold": 6.0,
+    "engineering_rationale": "FHWA standard metric for pavement condition assessment"
+  },
+  "secondary_target": {
+    "column_name": "Rutting_mean_x",
+    "target_type": "continuous",
+    "problem_type": "regression",
+    "prediction_horizon_years": 2,
+    "baseline_year": 2017,
+    "units": "mm",
+    "description": "Rutting depth - structural distress indicator",
+    "outlier_threshold": 10.0,
+    "purpose": "Validation of model robustness across distress types"
+  },
+  "evaluation_metrics": {
+    "primary": "RMSE",
+    "secondary": [
+      "MAE",
+      "R2",
+      "MAPE"
+    ],
+    "targets": {
+      "RMSE": 0.5,
+      "MAE": 0.4,
+      "R2": 0.7,
+      "MAPE": 15.0
+    },
+    "minimum_acceptable": {
+      "RMSE": 0.6,
+      "R2": 0.65
+    }
+  },
+  "baseline_models": {
+    "naive_persistence": "IRI_mean_y = IRI_mean_x",
+    "linear_deterioration": "IRI_mean_y = IRI_mean_x + (mean_annual_rate * 2)",
+    "historical_average": "IRI_mean_y = mean(IRI_mean_x, intermediate_year)"
+  },
+  "leakage_control": {
+    "allowed_features": [
+      "2017 baseline conditions",
+      "static features (geometry, structure, climate)"
+    ],
+    "forbidden_features": [
+      "2018 data",
+      "2019 data",
+      "maintenance records 2018-2019"
+    ],
+    "validation_strategy": "Temporal split - train on 2017, validate on 2019"
+  },
+  "dataset_id": "c1ba44638d60",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/No-maintenance-data/2017-2019 (no main).csv"
+}
