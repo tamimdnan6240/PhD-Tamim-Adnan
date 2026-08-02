@@ -1,0 +1,11 @@
+AADT_mean_x,AADT_Single_Unit_mean_x,AADT_Combination_mean_x,Future_AADT_mean_x,IRI_mean_x,Thickness_Rigid_mean_x,Thickness_Flexible_mean_x,Base_Thickness_mean_x,F_System_mode,Urban_Type,Surface_Type_mode,Base_Type_mode_x,Rutting_mean_x,Cracking_Percent_mean_x,Faulting_mean_x,Last_Overlay_Thickness_mean_x,Treatment_type,IRI_mean_y,RHU_AV_x,FRZ_IDX_x,TEMP_AVG_x,PRECIPITATION_x,Age_x
+22429.0,767.0,4163.0,22430.0,101.0,10.0,0.0,6.0,1,rural,3,2,0.0,0.0,0.0,3.5,Thick Layers,89.0,76.0,896.3,7.3,979.6,8
+22429.0,767.0,4163.0,22430.0,128.0,10.0,0.0,6.0,1,small urban,3,2,0.0,0.0,0.0,3.5,Thick Layers,123.0,76.0,896.3,7.3,979.6,8
+1964.0,92.0,6.0,2750.0,287.0,0.0,3.0,8.0,3,urban,2,3,0.1,0.0,0.0,1.5,Thin Layers,176.0,67.6,1.1,20.3,894.7,72
+1222.0,33.0,2.0,1710.0,271.0,0.0,3.0,8.0,3,urban,2,3,0.1,0.0,0.0,1.5,Thin Layers,222.0,67.6,1.1,20.3,894.7,73
+2182.0,175.0,242.0,3060.0,245.5,0.0,3.0,8.0,3,urban,2,3,0.3,0.0,0.0,1.5,Thin Layers,154.0,68.6,9.0,18.7,1015.6,73
+19601.0,568.0,196.0,27440.0,196.5,0.0,3.0,8.0,3,urban,2,3,0.2,0.5,0.0,1.5,Thin Layers,183.3,68.6,9.0,18.7,1015.6,73
+14674.0,264.0,205.0,27000.0,219.8,0.0,3.0,8.0,3,urban,2,3,0.2,4.8,0.0,1.5,Thin Layers,208.5,62.8,0.0,23.0,534.0,20
+35793.0,1432.0,107.0,50110.0,209.9,0.0,3.0,6.0,3,urban,2,3,0.2,0.8,0.0,1.5,Thin Layers,196.8,62.8,0.0,23.0,534.0,18
+10559.0,443.0,74.0,19430.0,359.0,0.0,3.0,8.0,3,urban,2,3,0.1,1.0,0.0,1.5,Thin Layers,145.0,62.8,0.0,23.0,534.0,45
+7007.0,126.0,98.0,9810.0,127.0,0.0,3.0,6.0,3,urban,2,3,0.0,0.0,0.0,1.5,Thin Layers,92.0,39.5,3.1,17.3,240.0,19
