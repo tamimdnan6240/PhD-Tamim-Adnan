@@ -1,0 +1,96 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "FINAL_PACKAGE_CLOSURE",
+  "created_at_utc": "2026-07-31T07:37:23.642080+00:00",
+  "target": "IRI_mean_y",
+  "final_recommended_model_name": "HistGradientBoostingRegressor_baseline",
+  "final_recommended_model_stage": "BASELINE_MODELING",
+  "final_recommended_model_artifact": "/content/pavement_agentic_workspace/models/final_recommended_model.joblib",
+  "final_model_metadata": "/content/pavement_agentic_workspace/models/final_recommended_model_metadata.json",
+  "approved_final_decision_artifacts": [
+    "/content/pavement_agentic_workspace/model_selection/final_model_selection.json",
+    "/content/pavement_agentic_workspace/model_selection/final_model_card.json",
+    "/content/pavement_agentic_workspace/reports/final_model_card.md",
+    "/content/pavement_agentic_workspace/reports/model_selection_executive_summary.md",
+    "/content/pavement_agentic_workspace/metrics/final_model_selection_comparison.csv",
+    "/content/pavement_agentic_workspace/model_selection/final_xai_summary_table.csv",
+    "/content/pavement_agentic_workspace/model_selection/final_artifact_manifest.json"
+  ],
+  "approved_metric_artifacts": [
+    "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.csv",
+    "/content/pavement_agentic_workspace/metrics/advanced_model_metrics_long.csv",
+    "/content/pavement_agentic_workspace/metrics/final_model_selection_comparison.csv"
+  ],
+  "approved_xai_artifacts": [
+    "/content/pavement_agentic_workspace/xai/advanced_selected_model_permutation_importance.csv",
+    "/content/pavement_agentic_workspace/xai/advanced_selected_model_permutation_importance.png",
+    "/content/pavement_agentic_workspace/xai/advanced_xai_summary.json",
+    "/content/pavement_agentic_workspace/model_selection/final_xai_summary_table.csv"
+  ],
+  "approved_model_artifacts": [
+    "/content/pavement_agentic_workspace/models/final_recommended_model.joblib",
+    "/content/pavement_agentic_workspace/models/final_recommended_model_metadata.json"
+  ],
+  "approved_governance_artifacts": [
+    "/content/pavement_agentic_workspace/features/feature_policy_preprocess.json",
+    "/content/pavement_agentic_workspace/split_preprocess/preprocessing_schema.json",
+    "/content/pavement_agentic_workspace/split_preprocess/leakage_verification.json",
+    "/content/pavement_agentic_workspace/advanced_modeling/reports/advanced_modeling_leakage_verification.json"
+  ],
+  "artifact_checksums": "/content/pavement_agentic_workspace/final_package/final_artifact_checksums.csv",
+  "closure_report_json": "/content/pavement_agentic_workspace/final_package/final_closure_report.json",
+  "closure_report_md": "/content/pavement_agentic_workspace/reports/final_closure_report.md",
+  "leakage_controls": {
+    "IRI_mean_y": "Target only; excluded from predictors.",
+    "Treatment_type": "Excluded unless temporal provenance is reviewer-approved.",
+    "Future_AADT_mean_x": "Excluded unless proven baseline-available.",
+    "non_target_y_variables": "Excluded generically.",
+    "IRI_mean_x": "Conditionally valid only under _x baseline-before-_y assumption.",
+    "leakage_controls_passed": true
+  },
+  "deployment_use_restrictions": [
+    "Use for network-level pavement roughness forecasting and decision-support screening only.",
+    "Do not use as a standalone final treatment-programming system without agency validation.",
+    "Confirm IRI units before applying condition thresholds.",
+    "Confirm _x variables are temporally prior to IRI_mean_y.",
+    "Review duplicate and asset-correlation risks.",
+    "Use grouped or temporal validation if route/segment/year identifiers become available.",
+    "Do not reintroduce Treatment_type or Future_AADT_mean_x without reviewer-approved provenance.",
+    "Use approved root artifacts only; do not use stale MM metrics as evidence."
+  ],
+  "prohibited_actions_confirmed": [
+    "No model training performed.",
+    "No hyperparameter tuning performed.",
+    "No preprocessing refit performed.",
+    "No prediction changes performed.",
+    "No metric changes performed.",
+    "No model selection changes performed."
+  ],
+  "all_verified_artifacts": [
+    "/content/pavement_agentic_workspace/model_selection/final_model_selection.json",
+    "/content/pavement_agentic_workspace/model_selection/final_model_card.json",
+    "/content/pavement_agentic_workspace/reports/final_model_card.md",
+    "/content/pavement_agentic_workspace/reports/model_selection_executive_summary.md",
+    "/content/pavement_agentic_workspace/metrics/final_model_selection_comparison.csv",
+    "/content/pavement_agentic_workspace/model_selection/final_xai_summary_table.csv",
+    "/content/pavement_agentic_workspace/model_selection/final_artifact_manifest.json",
+    "/content/pavement_agentic_workspace/models/final_recommended_model.joblib",
+    "/content/pavement_agentic_workspace/models/final_recommended_model_metadata.json",
+    "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.csv",
+    "/content/pavement_agentic_workspace/metrics/selected_baseline_model.json",
+    "/content/pavement_agentic_workspace/metrics/advanced_model_metrics_long.csv",
+    "/content/pavement_agentic_workspace/metrics/selected_advanced_model.json",
+    "/content/pavement_agentic_workspace/xai/advanced_selected_model_permutation_importance.csv",
+    "/content/pavement_agentic_workspace/xai/advanced_selected_model_permutation_importance.png",
+    "/content/pavement_agentic_workspace/xai/advanced_xai_summary.json",
+    "/content/pavement_agentic_workspace/features/feature_policy_preprocess.json",
+    "/content/pavement_agentic_workspace/split_preprocess/preprocessing_schema.json",
+    "/content/pavement_agentic_workspace/split_preprocess/leakage_verification.json",
+    "/content/pavement_agentic_workspace/advanced_modeling/reports/advanced_modeling_leakage_verification.json",
+    "/content/pavement_agentic_workspace/final_package/final_package_manifest.json",
+    "/content/pavement_agentic_workspace/final_package/final_closure_report.json",
+    "/content/pavement_agentic_workspace/reports/final_closure_report.md",
+    "/content/pavement_agentic_workspace/final_package/final_artifact_checksums.csv"
+  ]
+}
