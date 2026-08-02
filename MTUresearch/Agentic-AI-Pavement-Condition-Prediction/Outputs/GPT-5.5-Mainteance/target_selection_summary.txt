@@ -1,0 +1,8 @@
+TARGET_SELECT summary
+=====================
+Dataset ID: 9bc07dd2ac12
+File path: /content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv
+Selected target: IRI_mean_y
+Selection source: /content/pavement_agentic_workspace/target_candidates.csv
+Prediction framing: future/outcome pavement roughness regression target.
+Leakage controls: exclude target from predictors; review temporal availability of predictors.

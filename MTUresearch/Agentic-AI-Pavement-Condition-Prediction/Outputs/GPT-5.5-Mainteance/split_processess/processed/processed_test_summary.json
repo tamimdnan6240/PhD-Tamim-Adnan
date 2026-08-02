@@ -1,0 +1,11 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "TRAIN_TEST_SPLIT_PREPROCESS",
+  "target": "IRI_mean_y",
+  "split": "test",
+  "rows": 1161,
+  "processed_feature_count": 32,
+  "contains_nan_after_preprocessing": false,
+  "artifact_path": "/content/pavement_agentic_workspace/split_preprocess/processed/X_test_processed.csv"
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "TRAIN_TEST_SPLIT_PREPROCESS",
+  "target": "IRI_mean_y",
+  "target_excluded_from_predictors": true,
+  "forbidden_predictors_checked": [
+    "Future_AADT_mean_x",
+    "IRI_mean_y",
+    "Treatment_type"
+  ],
+  "forbidden_predictors_present_in_final_predictors": [],
+  "forbidden_predictors_present_in_processed_feature_names": [],
+  "conditionally_included_columns": [
+    "IRI_mean_x"
+  ],
+  "IRI_mean_x_policy": "IRI_mean_x included conditionally under documented _x baseline-before-_y outcome assumption.",
+  "Treatment_type_policy": "Excluded due to treatment/intervention leakage risk.",
+  "Future_AADT_mean_x_policy": "Excluded due to possible future information leakage.",
+  "non_target_y_policy": "Any non-target _y columns excluded generically.",
+  "leakage_controls_passed": true
+}
