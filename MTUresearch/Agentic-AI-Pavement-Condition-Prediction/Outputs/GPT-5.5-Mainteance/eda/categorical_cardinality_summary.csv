@@ -1,0 +1,3 @@
+column,dtype,nunique_dropna,missing_count,missing_pct,top_10_values
+Urban_Type,object,3,0,0.0,"{""urban"": 2857, ""rural"": 2285, ""small urban"": 659}"
+Treatment_type,object,3,0,0.0,"{""Thin Layers"": 3899, ""Thick Layers"": 1573, ""Resurfacing"": 329}"

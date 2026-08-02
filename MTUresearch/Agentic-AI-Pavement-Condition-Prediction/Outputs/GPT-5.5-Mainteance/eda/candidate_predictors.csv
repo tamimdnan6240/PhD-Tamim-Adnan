@@ -1,0 +1,23 @@
+column,included_as_candidate_predictor_for_future_review,note
+AADT_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+AADT_Single_Unit_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+AADT_Combination_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Future_AADT_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+IRI_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Thickness_Rigid_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Thickness_Flexible_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Base_Thickness_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+F_System_mode,True,Candidate predictor list only; no feature engineering or modeling performed.
+Urban_Type,True,Candidate predictor list only; no feature engineering or modeling performed.
+Surface_Type_mode,True,Candidate predictor list only; no feature engineering or modeling performed.
+Base_Type_mode_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Rutting_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Cracking_Percent_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Faulting_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Last_Overlay_Thickness_mean_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Treatment_type,True,Candidate predictor list only; no feature engineering or modeling performed.
+RHU_AV_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+FRZ_IDX_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+TEMP_AVG_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+PRECIPITATION_x,True,Candidate predictor list only; no feature engineering or modeling performed.
+Age_x,True,Candidate predictor list only; no feature engineering or modeling performed.

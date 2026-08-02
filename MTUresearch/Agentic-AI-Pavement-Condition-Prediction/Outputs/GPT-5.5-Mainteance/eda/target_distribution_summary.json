@@ -1,0 +1,27 @@
+{
+  "target": "IRI_mean_y",
+  "total_rows": 5801,
+  "original_non_null_count": 5801,
+  "original_non_null_rate": 1.0,
+  "numeric_non_null_count": 5801,
+  "numeric_non_null_rate": 1.0,
+  "coercion_failed_count": 0,
+  "numeric_suitability": true,
+  "summary": {
+    "count": 5801.0,
+    "mean": 87.15614549215653,
+    "std": 49.58512461764218,
+    "min": 30.0,
+    "1%": 32.0,
+    "5%": 37.0,
+    "25%": 51.8,
+    "50%": 71.7,
+    "75%": 109.0,
+    "95%": 188.0,
+    "99%": 258.0,
+    "max": 388.0
+  },
+  "negative_count": 0,
+  "zero_count": 0,
+  "very_high_gt_400_count": 0
+}

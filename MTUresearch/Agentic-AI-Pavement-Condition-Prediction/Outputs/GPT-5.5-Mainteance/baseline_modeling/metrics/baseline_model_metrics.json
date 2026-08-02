@@ -1,0 +1,86 @@
+{
+  "DummyRegressor_mean": {
+    "model_name": "DummyRegressor_mean",
+    "model_artifact_path": "/content/pavement_agentic_workspace/baseline_modeling/models/DummyRegressor_mean.joblib",
+    "root_model_artifact_path": "/content/pavement_agentic_workspace/models/baseline_DummyRegressor_mean.joblib",
+    "train_metrics": {
+      "rmse": 49.87074629891558,
+      "mae": 37.93074147220571,
+      "r2": 0.0,
+      "median_absolute_error": 33.0038577586207,
+      "max_absolute_error": 300.30385775862067,
+      "smape_pct": 42.47499172718665
+    },
+    "test_metrics": {
+      "rmse": 48.41998232964791,
+      "mae": 36.84634569262527,
+      "r2": -0.0031147625965533,
+      "median_absolute_error": 31.996142241379303,
+      "max_absolute_error": 279.30385775862067,
+      "smape_pct": 42.09213277497626
+    }
+  },
+  "RidgeRegression": {
+    "model_name": "RidgeRegression",
+    "model_artifact_path": "/content/pavement_agentic_workspace/baseline_modeling/models/RidgeRegression.joblib",
+    "root_model_artifact_path": "/content/pavement_agentic_workspace/models/baseline_RidgeRegression.joblib",
+    "train_metrics": {
+      "rmse": 24.36026121497211,
+      "mae": 16.714767802707527,
+      "r2": 0.7613990617175883,
+      "median_absolute_error": 11.277128427041532,
+      "max_absolute_error": 171.88696596734553,
+      "smape_pct": 19.0066009697646
+    },
+    "test_metrics": {
+      "rmse": 24.35516105189166,
+      "mae": 16.70509331754712,
+      "r2": 0.7462048139889916,
+      "median_absolute_error": 11.372120057945175,
+      "max_absolute_error": 178.92809718941666,
+      "smape_pct": 19.486828496045604
+    }
+  },
+  "RandomForestRegressor_baseline": {
+    "model_name": "RandomForestRegressor_baseline",
+    "model_artifact_path": "/content/pavement_agentic_workspace/baseline_modeling/models/RandomForestRegressor_baseline.joblib",
+    "root_model_artifact_path": "/content/pavement_agentic_workspace/models/baseline_RandomForestRegressor_baseline.joblib",
+    "train_metrics": {
+      "rmse": 10.109143983051284,
+      "mae": 6.46755274430969,
+      "r2": 0.9589099159431987,
+      "median_absolute_error": 3.925969345238091,
+      "max_absolute_error": 80.38954464285712,
+      "smape_pct": 7.399887872427461
+    },
+    "test_metrics": {
+      "rmse": 22.707989228003214,
+      "mae": 14.73475485645085,
+      "r2": 0.7793729654304316,
+      "median_absolute_error": 8.426395634920638,
+      "max_absolute_error": 125.38485654761894,
+      "smape_pct": 16.22691569722034
+    }
+  },
+  "HistGradientBoostingRegressor_baseline": {
+    "model_name": "HistGradientBoostingRegressor_baseline",
+    "model_artifact_path": "/content/pavement_agentic_workspace/baseline_modeling/models/HistGradientBoostingRegressor_baseline.joblib",
+    "root_model_artifact_path": "/content/pavement_agentic_workspace/models/baseline_HistGradientBoostingRegressor_baseline.joblib",
+    "train_metrics": {
+      "rmse": 10.58464003478331,
+      "mae": 7.584260947268044,
+      "r2": 0.9549535624101292,
+      "median_absolute_error": 5.351671070055652,
+      "max_absolute_error": 75.26806664238165,
+      "smape_pct": 9.444846424375292
+    },
+    "test_metrics": {
+      "rmse": 22.224285834826375,
+      "mae": 14.352903541317088,
+      "r2": 0.7886720224660457,
+      "median_absolute_error": 8.297007740607768,
+      "max_absolute_error": 116.60455130559961,
+      "smape_pct": 15.927775716091189
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "FEATURE_POLICY_PREPROCESS",
+  "created_at_utc": "2026-07-31T07:12:03.762184+00:00",
+  "target": "IRI_mean_y",
+  "row_count": 5801,
+  "rows_before_target_filter": 5801,
+  "rows_removed_missing_or_non_numeric_target": 0,
+  "column_count": 21,
+  "columns": [
+    "IRI_mean_y",
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "predictor_count": 20,
+  "numeric_predictors": [
+    "AADT_Combination_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_mean_x",
+    "Age_x",
+    "Base_Thickness_mean_x",
+    "Cracking_Percent_mean_x",
+    "FRZ_IDX_x",
+    "Faulting_mean_x",
+    "IRI_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "PRECIPITATION_x",
+    "RHU_AV_x",
+    "Rutting_mean_x",
+    "TEMP_AVG_x",
+    "Thickness_Flexible_mean_x",
+    "Thickness_Rigid_mean_x"
+  ],
+  "categorical_predictors": [
+    "Base_Type_mode_x",
+    "F_System_mode",
+    "Surface_Type_mode",
+    "Urban_Type"
+  ],
+  "excluded_columns": [
+    "Future_AADT_mean_x",
+    "IRI_mean_y",
+    "Treatment_type"
+  ],
+  "raw_unfitted_table": true,
+  "transformations_applied": [
+    "Target coerced to numeric.",
+    "Rows with missing/non-numeric target removed if any.",
+    "No predictor imputation.",
+    "No predictor encoding.",
+    "No predictor scaling.",
+    "No train/test split."
+  ]
+}

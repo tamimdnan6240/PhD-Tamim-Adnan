@@ -1,0 +1,6 @@
+{
+  "row_count": 5801,
+  "duplicate_row_count": 3,
+  "duplicate_row_pct": 0.051715221513532146,
+  "engineering_note": "Exact duplicate rows are reported for auditability. In pavement datasets, duplicates may reflect multiple observations, repeated segment records, or aggregation artifacts and require domain review."
+}

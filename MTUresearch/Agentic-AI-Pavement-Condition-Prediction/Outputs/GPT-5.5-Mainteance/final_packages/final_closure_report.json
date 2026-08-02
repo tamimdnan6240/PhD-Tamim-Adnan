@@ -1,0 +1,236 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "FINAL_PACKAGE_CLOSURE",
+  "created_at_utc": "2026-07-31T07:37:23.642080+00:00",
+  "target": "IRI_mean_y",
+  "target_interpretation": "Future/outcome pavement roughness represented by International Roughness Index. Higher IRI means rougher/worse pavement condition.",
+  "final_recommended_model_name": "HistGradientBoostingRegressor_baseline",
+  "final_recommended_model_stage": "BASELINE_MODELING",
+  "final_model_artifact": "/content/pavement_agentic_workspace/models/final_recommended_model.joblib",
+  "final_metrics": {
+    "rmse": 22.22428583482637,
+    "mae": 14.352903541317088,
+    "r2": 0.7886720224660457,
+    "smape_pct": 15.927775716091189,
+    "median_absolute_error": 8.297007740607768,
+    "max_absolute_error": 116.6045513055996
+  },
+  "selection_rationale": "Baseline selected model recommended because advanced tuning produced only negligible RMSE/R\u00b2 improvement while MAE was slightly worse. For pavement management, this does not justify added advanced-model tuning complexity.",
+  "baseline_vs_advanced_tradeoff": {
+    "rmse_improvement_advanced_vs_baseline": 0.010249459783349124,
+    "mae_improvement_advanced_vs_baseline": -0.2078039895187178,
+    "r2_improvement_advanced_vs_baseline": 0.00019487673641660486,
+    "operational_interpretation": "Advanced RMSE improvement is negligible in pavement IRI units while MAE is worse; therefore baseline is preferred for reporting/deployment-readiness unless future diagnostics show materially better high-IRI or threshold-crossing behavior."
+  },
+  "baseline_selected_model": {
+    "model_name": "HistGradientBoostingRegressor_baseline",
+    "metrics_source": "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.csv",
+    "test_metrics": {
+      "rmse": 22.22428583482637,
+      "mae": 14.352903541317088,
+      "r2": 0.7886720224660457,
+      "smape_pct": 15.927775716091189,
+      "median_absolute_error": 8.297007740607768,
+      "max_absolute_error": 116.6045513055996
+    }
+  },
+  "advanced_selected_model": {
+    "model_name": "HistGradientBoostingRegressor_tuned",
+    "metrics_source": "/content/pavement_agentic_workspace/metrics/advanced_model_metrics_long.csv",
+    "test_metrics": {
+      "rmse": 22.214036375043023,
+      "mae": 14.560707530835806,
+      "r2": 0.7888668992024623,
+      "smape_pct": 16.379541075811847,
+      "median_absolute_error": 8.908249716702684,
+      "max_absolute_error": 138.2976682126427
+    },
+    "xai_source": "/content/pavement_agentic_workspace/xai/advanced_selected_model_permutation_importance.csv"
+  },
+  "xai_summary": {
+    "final_xai_summary_table": "/content/pavement_agentic_workspace/model_selection/final_xai_summary_table.csv",
+    "xai_row_count": 32,
+    "top_10_features": [
+      {
+        "feature_name": "numeric__IRI_mean_x",
+        "source_column_inferred": "IRI_mean_x",
+        "engineering_family_if_available": "baseline_condition",
+        "importance_mean": 34.41388869020685,
+        "importance_std": 1.0422956706263322,
+        "rank": 1,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Baseline roughness; conditionally valid only under _x-before-_y temporal assumption."
+      },
+      {
+        "feature_name": "numeric__AADT_Combination_mean_x",
+        "source_column_inferred": "AADT_Combination_mean_x",
+        "engineering_family_if_available": "traffic_loading",
+        "importance_mean": 1.387937673037954,
+        "importance_std": 0.2546826481975173,
+        "rank": 2,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Traffic/loading exposure feature; truck and volume effects are pavement deterioration drivers."
+      },
+      {
+        "feature_name": "numeric__Cracking_Percent_mean_x",
+        "source_column_inferred": "Cracking_Percent_mean_x",
+        "engineering_family_if_available": "baseline_condition",
+        "importance_mean": 0.8481940616911373,
+        "importance_std": 0.1228668797307949,
+        "rank": 3,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Baseline pavement condition/distress feature; plausible path-dependent predictor of future IRI."
+      },
+      {
+        "feature_name": "numeric__Rutting_mean_x",
+        "source_column_inferred": "Rutting_mean_x",
+        "engineering_family_if_available": "baseline_condition",
+        "importance_mean": 0.5474525419303706,
+        "importance_std": 0.1157287526244853,
+        "rank": 4,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Baseline pavement condition/distress feature; plausible path-dependent predictor of future IRI."
+      },
+      {
+        "feature_name": "numeric__Base_Thickness_mean_x",
+        "source_column_inferred": "Base_Thickness_mean_x",
+        "engineering_family_if_available": "structure_materials",
+        "importance_mean": 0.536234187964521,
+        "importance_std": 0.2147496876888498,
+        "rank": 5,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Pavement structure/material feature; structural capacity and pavement type affect roughness progression."
+      },
+      {
+        "feature_name": "numeric__Age_x",
+        "source_column_inferred": "Age_x",
+        "engineering_family_if_available": "treatment_history",
+        "importance_mean": 0.4101671478098815,
+        "importance_std": 0.1897852801888918,
+        "rank": 6,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Age/history feature; age is relevant but its agency definition should be confirmed."
+      },
+      {
+        "feature_name": "numeric__RHU_AV_x",
+        "source_column_inferred": "RHU_AV_x",
+        "engineering_family_if_available": "climate_environment",
+        "importance_mean": 0.3864028008465648,
+        "importance_std": 0.1009815901819183,
+        "rank": 7,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Climate/environment feature; freeze-thaw, moisture, precipitation, and temperature affect deterioration."
+      },
+      {
+        "feature_name": "numeric__AADT_mean_x",
+        "source_column_inferred": "AADT_mean_x",
+        "engineering_family_if_available": "traffic_loading",
+        "importance_mean": 0.3708584945868672,
+        "importance_std": 0.3551433149578071,
+        "rank": 8,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Traffic/loading exposure feature; truck and volume effects are pavement deterioration drivers."
+      },
+      {
+        "feature_name": "numeric__TEMP_AVG_x",
+        "source_column_inferred": "TEMP_AVG_x",
+        "engineering_family_if_available": "climate_environment",
+        "importance_mean": 0.2971360020922944,
+        "importance_std": 0.0812494123285476,
+        "rank": 9,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Climate/environment feature; freeze-thaw, moisture, precipitation, and temperature affect deterioration."
+      },
+      {
+        "feature_name": "numeric__FRZ_IDX_x",
+        "source_column_inferred": "FRZ_IDX_x",
+        "engineering_family_if_available": "climate_environment",
+        "importance_mean": 0.2554780948727916,
+        "importance_std": 0.1302913413892746,
+        "rank": 10,
+        "timestamp": "2026-07-31T07:30:16.576058+00:00",
+        "interpretation_note": "Climate/environment feature; freeze-thaw, moisture, precipitation, and temperature affect deterioration."
+      }
+    ],
+    "interpretation_caution": "Permutation importance is a model-behavior diagnostic, not causal proof."
+  },
+  "engineering_feature_families": {
+    "baseline_condition": [
+      "IRI_mean_x",
+      "Rutting_mean_x",
+      "Cracking_Percent_mean_x",
+      "Faulting_mean_x"
+    ],
+    "traffic_loading": [
+      "AADT_mean_x",
+      "AADT_Single_Unit_mean_x",
+      "AADT_Combination_mean_x"
+    ],
+    "structure_materials": [
+      "Thickness_Rigid_mean_x",
+      "Thickness_Flexible_mean_x",
+      "Base_Thickness_mean_x",
+      "Last_Overlay_Thickness_mean_x",
+      "Surface_Type_mode",
+      "Base_Type_mode_x"
+    ],
+    "climate_environment": [
+      "RHU_AV_x",
+      "FRZ_IDX_x",
+      "TEMP_AVG_x",
+      "PRECIPITATION_x"
+    ],
+    "functional_context": [
+      "F_System_mode",
+      "Urban_Type"
+    ],
+    "treatment_history_retained": [
+      "Age_x"
+    ],
+    "excluded_treatment_future_variables": [
+      "Treatment_type",
+      "Future_AADT_mean_x"
+    ]
+  },
+  "leakage_controls": {
+    "IRI_mean_y": "Target only; excluded from predictors.",
+    "Treatment_type": "Excluded unless temporal provenance is reviewer-approved.",
+    "Future_AADT_mean_x": "Excluded unless proven baseline-available.",
+    "non_target_y_variables": "Excluded generically.",
+    "IRI_mean_x": "Conditionally valid only under _x baseline-before-_y assumption.",
+    "leakage_controls_passed": true
+  },
+  "limitations": [
+    "_x variables are assumed baseline/prior to _y; explicit dates were not available.",
+    "IRI_mean_x is conditionally valid only under the _x baseline-before-_y assumption.",
+    "Treatment_type was excluded to avoid treatment/intervention leakage.",
+    "Future_AADT_mean_x was excluded to avoid future-information leakage.",
+    "Random holdout split may not address spatial, corridor, or asset-level correlation.",
+    "Prior EDA found exact duplicate rows.",
+    "No route/segment/year/group identifier was available for grouped or temporal validation.",
+    "IRI units should be confirmed before operational use of good/fair/poor thresholds.",
+    "Maximum held-out error indicates some sections may have large prediction errors.",
+    "Model is suitable for network-level screening, not standalone treatment programming without validation."
+  ],
+  "deployment_use_restrictions": [
+    "Use for network-level pavement roughness forecasting and decision-support screening only.",
+    "Do not use as a standalone final treatment-programming system without agency validation.",
+    "Confirm IRI units before applying condition thresholds.",
+    "Confirm _x variables are temporally prior to IRI_mean_y.",
+    "Review duplicate and asset-correlation risks.",
+    "Use grouped or temporal validation if route/segment/year identifiers become available.",
+    "Do not reintroduce Treatment_type or Future_AADT_mean_x without reviewer-approved provenance.",
+    "Use approved root artifacts only; do not use stale MM metrics as evidence."
+  ],
+  "artifact_manifest": "/content/pavement_agentic_workspace/final_package/final_package_manifest.json",
+  "artifact_checksums": "/content/pavement_agentic_workspace/final_package/final_artifact_checksums.csv",
+  "prohibited_actions_confirmed": [
+    "No model training performed.",
+    "No hyperparameter tuning performed.",
+    "No preprocessing refit performed.",
+    "No prediction changes performed.",
+    "No metric changes performed.",
+    "No model selection changes performed."
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "BASELINE_MODELING",
+  "created_at_utc": "2026-07-31T07:19:23.055151+00:00",
+  "target": "IRI_mean_y",
+  "approved_inputs": [
+    "/content/pavement_agentic_workspace/split_preprocess/processed/X_train_processed.csv",
+    "/content/pavement_agentic_workspace/split_preprocess/processed/X_test_processed.csv",
+    "/content/pavement_agentic_workspace/split_preprocess/raw_splits/y_train.csv",
+    "/content/pavement_agentic_workspace/split_preprocess/raw_splits/y_test.csv",
+    "/content/pavement_agentic_workspace/split_preprocess/preprocessing_schema.json",
+    "/content/pavement_agentic_workspace/split_preprocess/leakage_verification.json",
+    "/content/pavement_agentic_workspace/split_preprocess/split_metadata.json"
+  ],
+  "train_rows": 4640,
+  "test_rows": 1161,
+  "feature_count": 32,
+  "models_trained": [
+    "DummyRegressor_mean",
+    "RidgeRegression",
+    "RandomForestRegressor_baseline",
+    "HistGradientBoostingRegressor_baseline"
+  ],
+  "model_artifact_paths": {
+    "DummyRegressor_mean": "/content/pavement_agentic_workspace/baseline_modeling/models/DummyRegressor_mean.joblib",
+    "RidgeRegression": "/content/pavement_agentic_workspace/baseline_modeling/models/RidgeRegression.joblib",
+    "RandomForestRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/models/RandomForestRegressor_baseline.joblib",
+    "HistGradientBoostingRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/models/HistGradientBoostingRegressor_baseline.joblib"
+  },
+  "root_model_artifact_paths": {
+    "DummyRegressor_mean": "/content/pavement_agentic_workspace/models/baseline_DummyRegressor_mean.joblib",
+    "RidgeRegression": "/content/pavement_agentic_workspace/models/baseline_RidgeRegression.joblib",
+    "RandomForestRegressor_baseline": "/content/pavement_agentic_workspace/models/baseline_RandomForestRegressor_baseline.joblib",
+    "HistGradientBoostingRegressor_baseline": "/content/pavement_agentic_workspace/models/baseline_HistGradientBoostingRegressor_baseline.joblib"
+  },
+  "per_model_prediction_paths": {
+    "DummyRegressor_mean": "/content/pavement_agentic_workspace/baseline_modeling/predictions/DummyRegressor_mean_test_predictions.csv",
+    "RidgeRegression": "/content/pavement_agentic_workspace/baseline_modeling/predictions/RidgeRegression_test_predictions.csv",
+    "RandomForestRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/predictions/RandomForestRegressor_baseline_test_predictions.csv",
+    "HistGradientBoostingRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/predictions/HistGradientBoostingRegressor_baseline_test_predictions.csv"
+  },
+  "per_model_performance_plots": {
+    "DummyRegressor_mean": "/content/pavement_agentic_workspace/plots/performance_DummyRegressor_mean.png",
+    "RidgeRegression": "/content/pavement_agentic_workspace/plots/performance_RidgeRegression.png",
+    "RandomForestRegressor_baseline": "/content/pavement_agentic_workspace/plots/performance_RandomForestRegressor_baseline.png",
+    "HistGradientBoostingRegressor_baseline": "/content/pavement_agentic_workspace/plots/performance_HistGradientBoostingRegressor_baseline.png"
+  },
+  "per_model_xai_artifacts": {
+    "DummyRegressor_mean": "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_DummyRegressor_mean.csv",
+    "RidgeRegression": "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_RidgeRegression.csv",
+    "RandomForestRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_RandomForestRegressor_baseline.csv",
+    "HistGradientBoostingRegressor_baseline": "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_HistGradientBoostingRegressor_baseline.csv"
+  },
+  "model_comparison_path": "/content/pavement_agentic_workspace/baseline_modeling/metrics/baseline_model_comparison.csv",
+  "root_metrics_csv_path": "/content/pavement_agentic_workspace/metrics.csv",
+  "model_metrics_json_path": "/content/pavement_agentic_workspace/baseline_modeling/metrics/baseline_model_metrics.json",
+  "root_metrics_json_path": "/content/pavement_agentic_workspace/metrics.json",
+  "selected_baseline_model_path": "/content/pavement_agentic_workspace/baseline_modeling/metrics/selected_baseline_model.json",
+  "selected_baseline_model": "HistGradientBoostingRegressor_baseline",
+  "selected_baseline_model_artifact_path": "/content/pavement_agentic_workspace/baseline_modeling/models/HistGradientBoostingRegressor_baseline.joblib",
+  "prediction_artifacts": {
+    "all_predictions_wide": "/content/pavement_agentic_workspace/baseline_modeling/predictions/baseline_all_model_predictions.csv",
+    "test_predictions_long": "/content/pavement_agentic_workspace/baseline_modeling/predictions/baseline_test_predictions_long.csv"
+  },
+  "plot_artifacts": [
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_residuals_vs_observed.png",
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_predicted_vs_observed.png",
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_metrics_comparison.png"
+  ],
+  "leakage_controls": {
+    "dataset_id": "9bc07dd2ac12",
+    "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+    "state": "BASELINE_MODELING",
+    "target": "IRI_mean_y",
+    "approved_processed_inputs_used": [
+      "/content/pavement_agentic_workspace/split_preprocess/processed/X_train_processed.csv",
+      "/content/pavement_agentic_workspace/split_preprocess/processed/X_test_processed.csv",
+      "/content/pavement_agentic_workspace/split_preprocess/raw_splits/y_train.csv",
+      "/content/pavement_agentic_workspace/split_preprocess/raw_splits/y_test.csv",
+      "/content/pavement_agentic_workspace/split_preprocess/preprocessing_schema.json",
+      "/content/pavement_agentic_workspace/split_preprocess/leakage_verification.json",
+      "/content/pavement_agentic_workspace/split_preprocess/split_metadata.json"
+    ],
+    "audit_row_id_preserved": true,
+    "audit_row_id_dropped_from_model_features": true,
+    "preprocessing_refit_in_this_state": false,
+    "test_preprocessing_refit": false,
+    "forbidden_feature_name_hits": [],
+    "forbidden_variables": [
+      "IRI_mean_y",
+      "Treatment_type",
+      "Future_AADT_mean_x",
+      "any non-target _y columns"
+    ],
+    "IRI_mean_x_policy": "Conditionally included under _x baseline-before-_y outcome assumption.",
+    "leakage_controls_passed": true
+  },
+  "engineering_limitations": [
+    "_x variables are assumed baseline/prior to _y; this remains a temporal assumption.",
+    "Treatment_type excluded to avoid treatment/intervention leakage.",
+    "Future_AADT_mean_x excluded to avoid future-information leakage.",
+    "Random holdout may not address spatial/asset correlation.",
+    "Prior EDA reported exact duplicates; duplicate train/test contamination risk remains documented."
+  ],
+  "pavement_metric_interpretation": {
+    "rmse": "RMSE is in IRI units and penalizes larger roughness prediction errors.",
+    "mae": "MAE is in IRI units and approximates average absolute roughness prediction error.",
+    "r2": "R\u00b2 measures explained variance but does not by itself determine asset-management usefulness.",
+    "smape": "SMAPE is percentage-like and should be interpreted alongside RMSE/MAE."
+  },
+  "artifacts_saved": [
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/baseline_model_comparison.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/baseline_model_metrics.json",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/selected_baseline_model.json",
+    "/content/pavement_agentic_workspace/baseline_modeling/baseline_modeling_report.json",
+    "/content/pavement_agentic_workspace/baseline_modeling/baseline_modeling_leakage_verification.json",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/baseline_all_model_predictions.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/baseline_test_predictions_long.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/baseline_modeling_feature_manifest.json",
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_residuals_vs_observed.png",
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_predicted_vs_observed.png",
+    "/content/pavement_agentic_workspace/baseline_modeling/plots/baseline_metrics_comparison.png",
+    "/content/pavement_agentic_workspace/metrics.json",
+    "/content/pavement_agentic_workspace/metrics.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/models/DummyRegressor_mean.joblib",
+    "/content/pavement_agentic_workspace/baseline_modeling/models/RidgeRegression.joblib",
+    "/content/pavement_agentic_workspace/baseline_modeling/models/RandomForestRegressor_baseline.joblib",
+    "/content/pavement_agentic_workspace/baseline_modeling/models/HistGradientBoostingRegressor_baseline.joblib",
+    "/content/pavement_agentic_workspace/models/baseline_DummyRegressor_mean.joblib",
+    "/content/pavement_agentic_workspace/models/baseline_RidgeRegression.joblib",
+    "/content/pavement_agentic_workspace/models/baseline_RandomForestRegressor_baseline.joblib",
+    "/content/pavement_agentic_workspace/models/baseline_HistGradientBoostingRegressor_baseline.joblib",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/DummyRegressor_mean_test_predictions.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/RidgeRegression_test_predictions.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/RandomForestRegressor_baseline_test_predictions.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/predictions/HistGradientBoostingRegressor_baseline_test_predictions.csv",
+    "/content/pavement_agentic_workspace/plots/performance_DummyRegressor_mean.png",
+    "/content/pavement_agentic_workspace/plots/performance_RidgeRegression.png",
+    "/content/pavement_agentic_workspace/plots/performance_RandomForestRegressor_baseline.png",
+    "/content/pavement_agentic_workspace/plots/performance_HistGradientBoostingRegressor_baseline.png",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_DummyRegressor_mean.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_RidgeRegression.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_RandomForestRegressor_baseline.csv",
+    "/content/pavement_agentic_workspace/baseline_modeling/metrics/xai_HistGradientBoostingRegressor_baseline.csv",
+    "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.csv",
+    "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.json",
+    "/content/pavement_agentic_workspace/metrics/baseline_model_comparison.csv",
+    "/content/pavement_agentic_workspace/metrics/selected_baseline_model.json",
+    "/content/pavement_agentic_workspace/plots/baseline_residuals_vs_observed.png",
+    "/content/pavement_agentic_workspace/plots/baseline_predicted_vs_observed.png",
+    "/content/pavement_agentic_workspace/plots/baseline_metrics_comparison.png"
+  ],
+  "prohibited_actions_confirmed": [
+    "No advanced hyperparameter tuning performed.",
+    "No preprocessing refit performed.",
+    "No test preprocessing fit performed.",
+    "Only approved processed split artifacts used."
+  ],
+  "corrective_reviewer_fix": {
+    "fixed_at_utc": "2026-07-31T07:21:45.161558+00:00",
+    "reason": "Reviewer required long-format metrics schema and root metrics/models/plots organization.",
+    "long_metrics_csv_path": "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.csv",
+    "long_metrics_json_path": "/content/pavement_agentic_workspace/metrics/baseline_model_metrics_long.json",
+    "root_metrics_dir": "/content/pavement_agentic_workspace/metrics",
+    "root_models_dir": "/content/pavement_agentic_workspace/models",
+    "root_plots_dir": "/content/pavement_agentic_workspace/plots",
+    "best_model_root_path": "/content/pavement_agentic_workspace/models/baseline_HistGradientBoostingRegressor_baseline.joblib",
+    "no_retraining_performed": true,
+    "no_hyperparameter_tuning_performed": true,
+    "no_unauthorized_models_added": true
+  }
+}
