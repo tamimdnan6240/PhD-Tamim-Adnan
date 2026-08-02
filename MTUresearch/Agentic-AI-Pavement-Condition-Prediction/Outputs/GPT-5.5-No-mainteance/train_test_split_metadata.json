@@ -1,0 +1,33 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "MODELING_PIPELINE_DESIGN",
+  "random_state": 42,
+  "test_size": 0.2,
+  "train_row_count": 4640,
+  "test_row_count": 1161,
+  "target_summary_train": {
+    "count": 4640,
+    "missing_count": 0,
+    "mean": 87.26375,
+    "median": 71.7,
+    "std": 49.860571760086394,
+    "min": 30.0,
+    "max": 388.0,
+    "q25": 51.8,
+    "q75": 108.825
+  },
+  "target_summary_test": {
+    "count": 1161,
+    "missing_count": 0,
+    "mean": 86.72609819121448,
+    "median": 71.7,
+    "std": 48.48740255188228,
+    "min": 30.0,
+    "max": 355.0,
+    "q25": 51.6,
+    "q75": 109.0
+  },
+  "stratification_used": true,
+  "stratification_notes": "Target quantile-bin stratification used for train/test split."
+}

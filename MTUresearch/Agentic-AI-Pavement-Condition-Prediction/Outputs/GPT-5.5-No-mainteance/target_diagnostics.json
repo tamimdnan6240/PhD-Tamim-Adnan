@@ -1,0 +1,28 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "TARGET_SELECT",
+  "target_column": "IRI_mean_y",
+  "task_type": "regression",
+  "target_dtype_original": "float64",
+  "target_dtype_modeling": "numeric",
+  "row_count": 5801,
+  "non_null_count": 5801,
+  "missing_count": 0,
+  "missing_percent": 0.0,
+  "coercion_fail_count": 0,
+  "min": 30.0,
+  "max": 388.0,
+  "mean": 87.15614549215653,
+  "median": 71.7,
+  "standard_deviation": 49.58512461764218,
+  "quantiles": {
+    "0.01": 32.0,
+    "0.05": 37.0,
+    "0.25": 51.8,
+    "0.5": 71.7,
+    "0.75": 109.0,
+    "0.95": 188.0,
+    "0.99": 258.0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "EDA_FEATURE_ENGINEERING_DESIGN",
+  "target_column": "IRI_mean_y",
+  "banned_features": [
+    "IRI_mean_y"
+  ],
+  "conditionally_allowed_features": [
+    "IRI_mean_x"
+  ],
+  "availability_sensitive_features": [
+    "Future_AADT_mean_x"
+  ],
+  "non_target_y_columns_found": [],
+  "target_derived_patterns_checked": [
+    "target",
+    "label",
+    "outcome",
+    "post",
+    "future_condition",
+    "delta_iri",
+    "iri_change",
+    "improvement",
+    "deterioration"
+  ],
+  "pattern_excluded_columns": [],
+  "final_excluded_columns": [
+    "IRI_mean_y"
+  ],
+  "feature_set_baseline_allowed": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "Treatment_type",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "feature_set_strict_no_prior_iri": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "Treatment_type",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "leakage_notes": {
+    "IRI_mean_x": "High association with IRI_mean_y does not alone prove leakage, but it requires temporal provenance review and two-feature-set modeling.",
+    "Future_AADT_mean_x": "Availability-sensitive traffic forecast; review whether it is available at prediction time."
+  }
+}

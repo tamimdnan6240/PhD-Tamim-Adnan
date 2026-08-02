@@ -1,0 +1,64 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "MODELING_PIPELINE_DESIGN",
+  "created_at_utc": "2026-07-28T13:02:42.163575+00:00",
+  "target_column": "IRI_mean_y",
+  "task_type": "regression",
+  "feature_sets": [
+    "baseline_condition_allowed",
+    "strict_no_prior_iri"
+  ],
+  "models": [
+    "RandomForestRegressor",
+    "ExtraTreesRegressor",
+    "HistGradientBoostingRegressor"
+  ],
+  "cv_strategy": {
+    "type": "KFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "used_on": "training split only"
+  },
+  "test_split_strategy": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratification_used": true,
+    "stratification_notes": "Target quantile-bin stratification used for train/test split."
+  },
+  "hyperparameter_optimization": {
+    "method": "RandomizedSearchCV",
+    "n_iter_per_model_per_feature_set": 10,
+    "scoring": "neg_root_mean_squared_error",
+    "refit": true
+  },
+  "preprocessing_governance": "All imputers, encoders, and model preprocessing are inside sklearn pipelines and fitted within train/CV folds. No preprocessing is fit globally for evaluation.",
+  "leakage_controls": {
+    "excluded_features": [
+      "IRI_mean_y"
+    ],
+    "IRI_mean_y_excluded_from_X": true,
+    "IRI_mean_x_sensitivity_comparison": "baseline_condition_allowed vs strict_no_prior_iri"
+  },
+  "artifact_organization": {
+    "metrics_dir": "/content/pavement_agentic_workspace/metrics",
+    "models_dir": "/content/pavement_agentic_workspace/models",
+    "plots_dir": "/content/pavement_agentic_workspace/plots",
+    "predictions_dir": "/content/pavement_agentic_workspace/predictions"
+  },
+  "metrics_artifacts": {
+    "model_performance_metrics_csv": "/content/pavement_agentic_workspace/metrics/model_performance_metrics.csv",
+    "model_metrics_json": "/content/pavement_agentic_workspace/metrics/model_metrics.json",
+    "model_metrics_long_csv": "/content/pavement_agentic_workspace/metrics/model_metrics_long.csv",
+    "feature_importance_best_models_csv": "/content/pavement_agentic_workspace/metrics/feature_importance_best_models.csv",
+    "per_model_feature_importance_csvs": [
+      "/content/pavement_agentic_workspace/metrics/feature_importance__baseline_condition_allowed__ExtraTreesRegressor.csv",
+      "/content/pavement_agentic_workspace/metrics/feature_importance__baseline_condition_allowed__RandomForestRegressor.csv",
+      "/content/pavement_agentic_workspace/metrics/feature_importance__strict_no_prior_iri__ExtraTreesRegressor.csv",
+      "/content/pavement_agentic_workspace/metrics/feature_importance__strict_no_prior_iri__RandomForestRegressor.csv",
+      "/content/pavement_agentic_workspace/metrics/feature_importance_best_models.csv"
+    ]
+  },
+  "repair_note": "MODELING_PIPELINE_DESIGN artifact organization repaired after reviewer request. No retraining performed; existing split, models, predictions, and plots preserved."
+}

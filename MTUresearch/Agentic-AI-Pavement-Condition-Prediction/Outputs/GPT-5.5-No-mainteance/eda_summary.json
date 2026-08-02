@@ -1,0 +1,602 @@
+{
+  "dataset_id": "9bc07dd2ac12",
+  "file_path": "/content/drive/MyDrive/Agentic-AI-Asset-management/Tamim/codes/Data/Maintenance-data/2017-2019-maintenance-dataset.csv",
+  "state": "EDA_FEATURE_ENGINEERING_DESIGN",
+  "dataset_shape": {
+    "rows": 5801,
+    "columns": 23
+  },
+  "dataset_columns": [
+    "AADT_mean_x",
+    "AADT_Single_Unit_mean_x",
+    "AADT_Combination_mean_x",
+    "Future_AADT_mean_x",
+    "IRI_mean_x",
+    "Thickness_Rigid_mean_x",
+    "Thickness_Flexible_mean_x",
+    "Base_Thickness_mean_x",
+    "F_System_mode",
+    "Urban_Type",
+    "Surface_Type_mode",
+    "Base_Type_mode_x",
+    "Rutting_mean_x",
+    "Cracking_Percent_mean_x",
+    "Faulting_mean_x",
+    "Last_Overlay_Thickness_mean_x",
+    "Treatment_type",
+    "IRI_mean_y",
+    "RHU_AV_x",
+    "FRZ_IDX_x",
+    "TEMP_AVG_x",
+    "PRECIPITATION_x",
+    "Age_x"
+  ],
+  "target_summary": {
+    "target_column": "IRI_mean_y",
+    "task_type": "regression",
+    "dtype_original": "float64",
+    "non_null_count": 5801,
+    "missing_count": 0,
+    "missing_percent": 0.0,
+    "min": 30.0,
+    "max": 388.0,
+    "mean": 87.15614549215653,
+    "median": 71.7,
+    "standard_deviation": 49.58512461764218,
+    "quantiles": {
+      "0.01": 32.0,
+      "0.05": 37.0,
+      "0.25": 51.8,
+      "0.50": 71.7,
+      "0.75": 109.0,
+      "0.95": 188.0,
+      "0.99": 258.0
+    }
+  },
+  "numeric_summary": {
+    "AADT_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 23275.18891570419,
+      "median": 13632.0,
+      "std": 29775.687402452386,
+      "min": 20.0,
+      "max": 269457.0,
+      "q25": 4250.0,
+      "q75": 28250.0
+    },
+    "AADT_Single_Unit_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 1048.129219100155,
+      "median": 545.0,
+      "std": 1349.8041727035152,
+      "min": 0.0,
+      "max": 15679.0,
+      "q25": 165.0,
+      "q75": 1387.0
+    },
+    "AADT_Combination_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 2004.1408033097744,
+      "median": 386.0,
+      "std": 3241.412774984024,
+      "min": 0.0,
+      "max": 19581.0,
+      "q25": 104.0,
+      "q75": 2569.0
+    },
+    "Future_AADT_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 28791.24888812274,
+      "median": 17200.0,
+      "std": 36474.97246888894,
+      "min": 50.0,
+      "max": 319474.0,
+      "q25": 5436.0,
+      "q75": 35180.0
+    },
+    "IRI_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 110.8741596276504,
+      "median": 92.0,
+      "std": 61.96576554357585,
+      "min": 31.0,
+      "max": 393.0,
+      "q25": 66.0,
+      "q75": 138.2
+    },
+    "Thickness_Rigid_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 2.8156869505257713,
+      "median": 0.0,
+      "std": 4.45306001894517,
+      "min": 0.0,
+      "max": 20.0,
+      "q25": 0.0,
+      "q75": 7.0
+    },
+    "Thickness_Flexible_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 6.157869332873643,
+      "median": 5.5,
+      "std": 3.481355346080285,
+      "min": 0.0,
+      "max": 28.0,
+      "q25": 4.0,
+      "q75": 8.0
+    },
+    "Base_Thickness_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 12.402792621961732,
+      "median": 10.0,
+      "std": 7.616767288295994,
+      "min": 1.0,
+      "max": 49.0,
+      "q25": 6.0,
+      "q75": 16.3
+    },
+    "F_System_mode": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 2.7912428891570418,
+      "median": 3.0,
+      "std": 1.4768439752979987,
+      "min": 1.0,
+      "max": 6.0,
+      "q25": 1.0,
+      "q75": 4.0
+    },
+    "Surface_Type_mode": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 4.572832270298225,
+      "median": 6.0,
+      "std": 2.1903187598989664,
+      "min": 2.0,
+      "max": 7.0,
+      "q25": 2.0,
+      "q75": 7.0
+    },
+    "Base_Type_mode_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 2.7915876573004654,
+      "median": 2.0,
+      "std": 1.1513881784743103,
+      "min": 2.0,
+      "max": 5.0,
+      "q25": 2.0,
+      "q75": 3.0
+    },
+    "Rutting_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 0.17072918462334083,
+      "median": 0.2,
+      "std": 0.1159739979396714,
+      "min": 0.0,
+      "max": 1.1,
+      "q25": 0.1,
+      "q75": 0.2
+    },
+    "Cracking_Percent_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 4.598793311498017,
+      "median": 0.5,
+      "std": 9.056415439489143,
+      "min": 0.0,
+      "max": 95.3,
+      "q25": 0.0,
+      "q75": 5.0
+    },
+    "Faulting_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 0.0009653508015859334,
+      "median": 0.0,
+      "std": 0.012138525413988924,
+      "min": 0.0,
+      "max": 0.4,
+      "q25": 0.0,
+      "q75": 0.0
+    },
+    "Last_Overlay_Thickness_mean_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 2.8951904843992415,
+      "median": 2.0,
+      "std": 2.7275451832445365,
+      "min": 0.0,
+      "max": 38.0,
+      "q25": 1.8,
+      "q75": 3.5
+    },
+    "IRI_mean_y": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 87.15614549215653,
+      "median": 71.7,
+      "std": 49.58512461764218,
+      "min": 30.0,
+      "max": 388.0,
+      "q25": 51.8,
+      "q75": 109.0
+    },
+    "RHU_AV_x": {
+      "non_null_count": 5785,
+      "missing_count": 16,
+      "mean": 73.75863439930855,
+      "median": 76.4,
+      "std": 9.422882113907578,
+      "min": 34.7,
+      "max": 88.3,
+      "q25": 73.7,
+      "q75": 78.0
+    },
+    "FRZ_IDX_x": {
+      "non_null_count": 5785,
+      "missing_count": 16,
+      "mean": 339.039533275713,
+      "median": 291.4,
+      "std": 319.4190551918122,
+      "min": 0.0,
+      "max": 1678.8,
+      "q25": 73.1,
+      "q75": 459.1
+    },
+    "TEMP_AVG_x": {
+      "non_null_count": 5785,
+      "missing_count": 16,
+      "mean": 10.74105445116681,
+      "median": 10.3,
+      "std": 4.09976510577358,
+      "min": -0.1,
+      "max": 25.3,
+      "q25": 8.3,
+      "q75": 12.3
+    },
+    "PRECIPITATION_x": {
+      "non_null_count": 5785,
+      "missing_count": 16,
+      "mean": 1168.996940363008,
+      "median": 1302.6,
+      "std": 391.52927818179245,
+      "min": 178.0,
+      "max": 3145.3,
+      "q25": 1027.7,
+      "q75": 1379.0
+    },
+    "Age_x": {
+      "non_null_count": 5801,
+      "missing_count": 0,
+      "mean": 48.06067919324254,
+      "median": 49.0,
+      "std": 25.15819137503241,
+      "min": 8.0,
+      "max": 244.0,
+      "q25": 26.0,
+      "q75": 65.0
+    }
+  },
+  "categorical_summary": {
+    "F_System_mode": {
+      "unique_count": 6,
+      "top_values": {
+        "1": 1813,
+        "3": 1717,
+        "4": 973,
+        "5": 700,
+        "2": 438,
+        "6": 160
+      }
+    },
+    "Urban_Type": {
+      "unique_count": 3,
+      "top_values": {
+        "urban": 2857,
+        "rural": 2285,
+        "small urban": 659
+      }
+    },
+    "Surface_Type_mode": {
+      "unique_count": 4,
+      "top_values": {
+        "2": 2228,
+        "6": 1820,
+        "7": 1473,
+        "3": 280
+      }
+    },
+    "Base_Type_mode_x": {
+      "unique_count": 3,
+      "top_values": {
+        "2": 3453,
+        "3": 1226,
+        "5": 1122
+      }
+    },
+    "Treatment_type": {
+      "unique_count": 3,
+      "top_values": {
+        "Thin Layers": 3899,
+        "Thick Layers": 1573,
+        "Resurfacing": 329
+      }
+    }
+  },
+  "missingness_summary": [
+    {
+      "column": "PRECIPITATION_x",
+      "missing_count": 16,
+      "missing_percent": 0.27581451473883817
+    },
+    {
+      "column": "TEMP_AVG_x",
+      "missing_count": 16,
+      "missing_percent": 0.27581451473883817
+    },
+    {
+      "column": "FRZ_IDX_x",
+      "missing_count": 16,
+      "missing_percent": 0.27581451473883817
+    },
+    {
+      "column": "RHU_AV_x",
+      "missing_count": 16,
+      "missing_percent": 0.27581451473883817
+    },
+    {
+      "column": "AADT_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "AADT_Single_Unit_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "AADT_Combination_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Thickness_Flexible_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Thickness_Rigid_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "IRI_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Future_AADT_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Base_Thickness_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "F_System_mode",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Urban_Type",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Surface_Type_mode",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Faulting_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Cracking_Percent_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Rutting_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Base_Type_mode_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "IRI_mean_y",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Treatment_type",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Last_Overlay_Thickness_mean_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    },
+    {
+      "column": "Age_x",
+      "missing_count": 0,
+      "missing_percent": 0.0
+    }
+  ],
+  "correlation_with_target": {
+    "IRI_mean_x": 0.8510989487897178,
+    "F_System_mode": 0.5697937278246737,
+    "AADT_Combination_mean_x": -0.35235410271945594,
+    "AADT_Single_Unit_mean_x": -0.30749130516640705,
+    "Base_Thickness_mean_x": -0.2980691979411659,
+    "AADT_mean_x": -0.28587387733884273,
+    "Future_AADT_mean_x": -0.2842409909665133,
+    "Thickness_Rigid_mean_x": -0.2205610220900448,
+    "Surface_Type_mode": -0.19969628969963396,
+    "Cracking_Percent_mean_x": 0.15693550589515048,
+    "Rutting_mean_x": 0.11829091596012467,
+    "Thickness_Flexible_mean_x": -0.11408521677182737,
+    "Last_Overlay_Thickness_mean_x": -0.11160870405824537,
+    "Base_Type_mode_x": -0.09902461511055582,
+    "RHU_AV_x": -0.07513050579748523,
+    "Faulting_mean_x": 0.04819459584250646,
+    "FRZ_IDX_x": -0.04467114961265966,
+    "PRECIPITATION_x": -0.03910896157942673,
+    "TEMP_AVG_x": -0.014427391821389789,
+    "Age_x": 0.009651496253158413
+  },
+  "outlier_summary": {
+    "AADT_mean_x": {
+      "iqr_lower_fence": -31750.0,
+      "iqr_upper_fence": 64250.0,
+      "iqr_outlier_count": 460,
+      "iqr_outlier_percent_non_null": 7.929667298741597
+    },
+    "AADT_Single_Unit_mean_x": {
+      "iqr_lower_fence": -1668.0,
+      "iqr_upper_fence": 3220.0,
+      "iqr_outlier_count": 432,
+      "iqr_outlier_percent_non_null": 7.44699189794863
+    },
+    "AADT_Combination_mean_x": {
+      "iqr_lower_fence": -3593.5,
+      "iqr_upper_fence": 6266.5,
+      "iqr_outlier_count": 674,
+      "iqr_outlier_percent_non_null": 11.618686433373556
+    },
+    "Future_AADT_mean_x": {
+      "iqr_lower_fence": -39180.0,
+      "iqr_upper_fence": 79796.0,
+      "iqr_outlier_count": 463,
+      "iqr_outlier_percent_non_null": 7.981382520255129
+    },
+    "IRI_mean_x": {
+      "iqr_lower_fence": -42.29999999999998,
+      "iqr_upper_fence": 246.49999999999997,
+      "iqr_outlier_count": 246,
+      "iqr_outlier_percent_non_null": 4.240648164109636
+    },
+    "Thickness_Rigid_mean_x": {
+      "iqr_lower_fence": -10.5,
+      "iqr_upper_fence": 17.5,
+      "iqr_outlier_count": 8,
+      "iqr_outlier_percent_non_null": 0.13790725736941908
+    },
+    "Thickness_Flexible_mean_x": {
+      "iqr_lower_fence": -2.0,
+      "iqr_upper_fence": 14.0,
+      "iqr_outlier_count": 111,
+      "iqr_outlier_percent_non_null": 1.9134631960006896
+    },
+    "Base_Thickness_mean_x": {
+      "iqr_lower_fence": -9.450000000000001,
+      "iqr_upper_fence": 31.75,
+      "iqr_outlier_count": 158,
+      "iqr_outlier_percent_non_null": 2.7236683330460263
+    },
+    "F_System_mode": {
+      "iqr_lower_fence": -3.5,
+      "iqr_upper_fence": 8.5,
+      "iqr_outlier_count": 0,
+      "iqr_outlier_percent_non_null": 0.0
+    },
+    "Surface_Type_mode": {
+      "iqr_lower_fence": -5.5,
+      "iqr_upper_fence": 14.5,
+      "iqr_outlier_count": 0,
+      "iqr_outlier_percent_non_null": 0.0
+    },
+    "Base_Type_mode_x": {
+      "iqr_lower_fence": 0.5,
+      "iqr_upper_fence": 4.5,
+      "iqr_outlier_count": 1122,
+      "iqr_outlier_percent_non_null": 19.341492846061023
+    },
+    "Rutting_mean_x": {
+      "iqr_lower_fence": -0.05000000000000002,
+      "iqr_upper_fence": 0.35000000000000003,
+      "iqr_outlier_count": 422,
+      "iqr_outlier_percent_non_null": 7.274607826236856
+    },
+    "Cracking_Percent_mean_x": {
+      "iqr_lower_fence": -7.5,
+      "iqr_upper_fence": 12.5,
+      "iqr_outlier_count": 695,
+      "iqr_outlier_percent_non_null": 11.980692983968282
+    },
+    "Faulting_mean_x": {
+      "iqr_lower_fence": null,
+      "iqr_upper_fence": null,
+      "iqr_outlier_count": 0,
+      "iqr_outlier_percent_non_null": 0.0
+    },
+    "Last_Overlay_Thickness_mean_x": {
+      "iqr_lower_fence": -0.7499999999999998,
+      "iqr_upper_fence": 6.05,
+      "iqr_outlier_count": 319,
+      "iqr_outlier_percent_non_null": 5.499051887605585
+    },
+    "IRI_mean_y": {
+      "iqr_lower_fence": -34.000000000000014,
+      "iqr_upper_fence": 194.8,
+      "iqr_outlier_count": 248,
+      "iqr_outlier_percent_non_null": 4.275124978451991
+    },
+    "RHU_AV_x": {
+      "iqr_lower_fence": 67.25,
+      "iqr_upper_fence": 84.44999999999999,
+      "iqr_outlier_count": 979,
+      "iqr_outlier_percent_non_null": 16.923076923076923
+    },
+    "FRZ_IDX_x": {
+      "iqr_lower_fence": -505.9,
+      "iqr_upper_fence": 1038.1,
+      "iqr_outlier_count": 258,
+      "iqr_outlier_percent_non_null": 4.45980985306828
+    },
+    "TEMP_AVG_x": {
+      "iqr_lower_fence": 2.3000000000000007,
+      "iqr_upper_fence": 18.3,
+      "iqr_outlier_count": 346,
+      "iqr_outlier_percent_non_null": 5.9809853068280034
+    },
+    "PRECIPITATION_x": {
+      "iqr_lower_fence": 500.7500000000001,
+      "iqr_upper_fence": 1905.9499999999998,
+      "iqr_outlier_count": 570,
+      "iqr_outlier_percent_non_null": 9.853068280034574
+    },
+    "Age_x": {
+      "iqr_lower_fence": -32.5,
+      "iqr_upper_fence": 123.5,
+      "iqr_outlier_count": 47,
+      "iqr_outlier_percent_non_null": 0.810205137045337
+    }
+  }
+}

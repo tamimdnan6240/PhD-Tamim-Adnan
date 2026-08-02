@@ -1,0 +1,2 @@
+target_column,task_type,target_dtype_original,target_dtype_modeling,row_count,non_null_count,missing_count,missing_percent,coercion_fail_count,min,max,mean,median,standard_deviation,quantile_0.01,quantile_0.05,quantile_0.25,quantile_0.5,quantile_0.75,quantile_0.95,quantile_0.99
+IRI_mean_y,regression,float64,numeric,5801,5801,0,0.0,0,30.0,388.0,87.15614549215653,71.7,49.58512461764218,32.0,37.0,51.8,71.7,109.0,188.0,258.0
